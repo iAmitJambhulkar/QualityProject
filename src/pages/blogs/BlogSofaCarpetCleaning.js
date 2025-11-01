@@ -18,7 +18,7 @@ const BlogSofaCarpetCleaning = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>The Best Sofa Cleaning Services in Nagpur India</h1>
@@ -33,7 +33,7 @@ const BlogSofaCarpetCleaning = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 THE BEST SOFA CLEANING SERVICES IN NAGPUR INDIA, JUST CHECK IT!
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -51,7 +51,7 @@ const BlogSofaCarpetCleaning = () => {
 
                         {/* Why Hire Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Why should you hire Quality Housekeeping Services?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -63,7 +63,7 @@ const BlogSofaCarpetCleaning = () => {
 
                         {/* Benefits */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 What are the benefits of hiring us?
                             </h2>
                             <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '15px' }}>
@@ -79,7 +79,7 @@ const BlogSofaCarpetCleaning = () => {
                                         padding: '15px 20px',
                                         background: '#f8f9ff',
                                         borderRadius: '8px',
-                                        borderLeft: '4px solid #667eea',
+                                        borderLeft: '4px solid #1976D2',
                                         color: '#555'
                                     }}>
                                         ✓ {benefit}
@@ -90,7 +90,7 @@ const BlogSofaCarpetCleaning = () => {
 
                         {/* Process */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Process of Cleaning a Sofa at Home
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555', marginBottom: '25px' }}>
@@ -109,7 +109,7 @@ const BlogSofaCarpetCleaning = () => {
                                         padding: '20px',
                                         background: '#f8f9ff',
                                         borderRadius: '8px',
-                                        borderLeft: '4px solid #667eea'
+                                        borderLeft: '4px solid #1976D2'
                                     }}>
                                         <h4 style={{ color: '#333', marginBottom: '10px' }}>{step.title}</h4>
                                         <p style={{ lineHeight: '1.8', color: '#555' }}>{step.desc}</p>
@@ -124,7 +124,7 @@ const BlogSofaCarpetCleaning = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Types of Sofas Covered in our Professional Sofa Cleaning Services
                             </h2>
                             <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '12px' }}>
@@ -154,7 +154,7 @@ const BlogSofaCarpetCleaning = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
                             <div style={{ display: 'grid', gap: '25px' }}>
@@ -179,7 +179,7 @@ const BlogSofaCarpetCleaning = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -199,7 +199,7 @@ const BlogSofaCarpetCleaning = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

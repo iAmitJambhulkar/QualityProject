@@ -81,7 +81,7 @@ const Services = () => {
                   </ul>
                   <div style={{ 
                     marginTop: '15px', 
-                    color: '#667eea', 
+                    color: '#1976D2', 
                     fontWeight: 'bold' 
                   }}>
                     Learn More →

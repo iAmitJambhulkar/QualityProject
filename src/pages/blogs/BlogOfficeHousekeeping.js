@@ -18,7 +18,7 @@ const BlogOfficeHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Why We Always Choose Topmost Office Housekeeping?</h1>
@@ -33,7 +33,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY WE ALWAYS CHOOSE TOPMOST OFFICE HOUSEKEEPING?
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -54,7 +54,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Contract Basis */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Office Housekeeping Services In Nagpur On A Contract Basis
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -71,7 +71,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Office Housekeeping Service */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Office Housekeeping Service in NAGPUR
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -83,7 +83,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Purpose */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 What purpose does keeping the office tidy serve?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -103,7 +103,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Features */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 FEATURES
                             </h2>
                             <ul style={{
@@ -116,7 +116,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Observing strict cleanliness requirements
@@ -125,7 +125,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ A wealth of experience providing offices and businesses with contract cleaning services of the highest calibre
@@ -134,7 +134,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Make sure you give excellent service
@@ -143,7 +143,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Utilizing cutting-edge technology to improve service standards and streamline process handling
@@ -152,7 +152,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Meeting the sanitary and orderly requirements of an office setting
@@ -161,7 +161,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Making a great first impression on customers
@@ -170,7 +170,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Help in identifying the most important aspects of the building and making sure they're always maintained in top shape
@@ -179,7 +179,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Seasoned housekeeping staff assistance
@@ -188,7 +188,7 @@ const BlogOfficeHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Providing clients with helpful assistance for establishing a safer and healthier workplace
@@ -203,7 +203,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Why Employ Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Why should you employ us in NAGPUR for office cleaning services?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -241,7 +241,7 @@ const BlogOfficeHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 QHS OFFICE HOUSEKEEPING - Your Best Option
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -254,7 +254,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Professional Services */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Get professional office deep cleaning services whenever it suits you
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -291,7 +291,7 @@ const BlogOfficeHousekeeping = () => {
 
                         {/* Benefits */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Benefits of working with us
                             </h2>
                             
@@ -302,7 +302,7 @@ const BlogOfficeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Affordable Pricing</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Affordable Pricing</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Everyone believes that professional companies are incredibly expensive and difficult to afford, however, 
                                         this belief is wholly unfounded. All of our services are provided at a fair price that will undoubtedly 
@@ -316,7 +316,7 @@ const BlogOfficeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Quality Control</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Quality Control</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         We guarantee that every service we provide will be of the highest calibre and will be delivered on 
                                         schedule. During the course of our work, we follow every directive given by our client. In order for 
@@ -331,7 +331,7 @@ const BlogOfficeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Transparency</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Transparency</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         If you employ us for the project, we will explicitly describe the project's scope, warranties, rates, 
                                         and tasks, as well as any additional fees. This guarantees our clients' peace of mind.
@@ -346,7 +346,7 @@ const BlogOfficeHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -438,7 +438,7 @@ const BlogOfficeHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -458,7 +458,7 @@ const BlogOfficeHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

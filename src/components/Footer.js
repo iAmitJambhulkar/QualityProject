@@ -7,34 +7,21 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-section">
+          <div className="footer-section about-section">
             <h3>Quality Housekeeping Services</h3>
             <p>Professional cleaning and housekeeping services for homes and offices across India.</p>
-
-            <div style={{ marginTop: '20px' }}>
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/blogs">Blogs</a></li>
-                <li><a href="/jobs">Jobs</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-              </ul>
-            </div>
           </div>
 
-          <div className="footer-section">
-            <h4>Service Areas</h4>
+          <div className="footer-section links-section">
+            <h4>Quick Links</h4>
             <ul>
-              <li><a href="/services/nagpur">Nagpur Services</a></li>
-              <li><a href="/services/jabalpur">Jabalpur Services</a></li>
-              <li><a href="/services/gondia">Gondia Services</a></li>
-              <li>Home Cleaning</li>
-              <li>Office Cleaning</li>
-              <li>Deep Cleaning</li>
-              <li>Maintenance Services</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/blogs">Blogs</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
         </div>

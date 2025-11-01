@@ -111,7 +111,7 @@ const BlogTemplate = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <span style={{ 
@@ -142,7 +142,7 @@ const BlogTemplate = () => {
                             background: 'linear-gradient(135deg, #f8f9ff 0%, #e8ebff 100%)',
                             padding: '40px',
                             borderRadius: '15px',
-                            borderLeft: '5px solid #667eea',
+                            borderLeft: '5px solid #1976D2',
                             marginBottom: '40px'
                         }}>
                             <p style={{ 
@@ -162,7 +162,7 @@ const BlogTemplate = () => {
                             borderRadius: '15px',
                             boxShadow: '0 5px 20px rgba(0,0,0,0.1)'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '20px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '20px' }}>
                                 Full Content Coming Soon
                             </h2>
                             <p style={{ fontSize: '1.1rem', color: '#666', marginBottom: '30px' }}>
@@ -171,7 +171,7 @@ const BlogTemplate = () => {
                             <a href="/contact" className="btn btn-primary" style={{
                                 display: 'inline-block',
                                 padding: '15px 40px',
-                                backgroundColor: '#667eea',
+                                backgroundColor: '#1976D2',
                                 color: 'white',
                                 textDecoration: 'none',
                                 borderRadius: '50px',
@@ -188,7 +188,7 @@ const BlogTemplate = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -208,7 +208,7 @@ const BlogTemplate = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

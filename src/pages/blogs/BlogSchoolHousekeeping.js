@@ -18,7 +18,7 @@ const BlogSchoolHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>School Housekeeping Services Beyond Expectation</h1>
@@ -33,7 +33,7 @@ const BlogSchoolHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 SCHOOL HOUSEKEEPING SERVICES BEYOND EXPECTATION
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -58,7 +58,7 @@ const BlogSchoolHousekeeping = () => {
 
                         {/* Value of Educational Cleaning */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 THE VALUE OF EDUCATIONAL CLEANING SERVICES
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -82,7 +82,7 @@ const BlogSchoolHousekeeping = () => {
 
                         {/* Why It's Important */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY IT'S IMPORTANT TO TAKE THE HELP OF OUR QUALITY SCHOOL HOUSEKEEPING SERVICES IN NAGPUR INDIA
                             </h2>
                             
@@ -96,7 +96,7 @@ const BlogSchoolHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     <strong>Parents' worries will be reduced:</strong> It provides parents with the reassurance that their kids won't be 
@@ -107,7 +107,7 @@ const BlogSchoolHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     <strong>Less distraction for both teachers and students:</strong> A teacher will undoubtedly become distracted while 
@@ -117,7 +117,7 @@ const BlogSchoolHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     <strong>More time for education:</strong> There will be no more time lost looking around a messy space for a school 
@@ -127,7 +127,7 @@ const BlogSchoolHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     <strong>Establishing healthy behaviours in kids:</strong> Children that attend a clean school will probably bring that 
@@ -148,7 +148,7 @@ const BlogSchoolHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 HOW A CLEAN SCHOOL MAKES A DIFFERENCE?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -171,7 +171,7 @@ const BlogSchoolHousekeeping = () => {
 
                         {/* Professional Service */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Why Choose Professional School Cleaning Services?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -193,7 +193,7 @@ const BlogSchoolHousekeeping = () => {
 
                         {/* Benefits */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHAT ARE THE BENEFITS OF USING OUR BEST SCHOOL HOUSEKEEPING SERVICES IN NAGPUR INDIA?
                             </h2>
                             
@@ -279,7 +279,7 @@ const BlogSchoolHousekeeping = () => {
 
                         {/* Services We Cover */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHAT SERVICES DO OUR SCHOOL HOUSEKEEPING SERVICES IN NAGPUR COVER?
                             </h2>
 
@@ -290,7 +290,7 @@ const BlogSchoolHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>A thorough cleaning of all blackboards</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>A thorough cleaning of all blackboards</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         The housekeeping service is an overlooked yet crucial component of a school or college facility. Small children are 
                                         better than your cleaner at spotting dust blotches and unrubbed chalk on the chalkboard. In addition, problems 
@@ -305,7 +305,7 @@ const BlogSchoolHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Furnishings & Furniture</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Furnishings & Furniture</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         On their tables, children scratch their pencils, and they cover the doors with different coloured crayons. The 
                                         college furniture is repaired, routinely maintained, and cleaned as part of our company's college housekeeping 
@@ -321,7 +321,7 @@ const BlogSchoolHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Dining Rooms</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Dining Rooms</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Water and food are particularly susceptible to various infections at all times of the year. Water dispensers, 
                                         rooftop tanks, mess areas, kitchens, and canteens all require excellent hygiene and thorough cleaning. The 
@@ -336,7 +336,7 @@ const BlogSchoolHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Floors, hallways, and a playground</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Floors, hallways, and a playground</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our company's housekeepers have received extensive training on how to thoroughly clean, to disinfect, and wipe the 
                                         pathways, hallways, playgrounds, and amphitheatre floors. Dust, perspiration, and yes, smiles are also present.
@@ -349,7 +349,7 @@ const BlogSchoolHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Books & Libraries</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Books & Libraries</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Books are kept at libraries. Bugs can also be found in libraries. Books stacked on top of each other in dimly lit 
                                         book racks provide an inviting habitat for bugs and insects to settle. Our company's school and college housekeeping 
@@ -363,7 +363,7 @@ const BlogSchoolHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Utilities for paper and stationery</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Utilities for paper and stationery</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Any school, no matter how big or little, depends on stationary, whether it be for a lab, staff room, or classroom. 
                                         Waste paper, test tubes, art and craft supplies that have been used up, broken crayons, pencil coils, eraser rubbers, 
@@ -400,7 +400,7 @@ const BlogSchoolHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -420,7 +420,7 @@ const BlogSchoolHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

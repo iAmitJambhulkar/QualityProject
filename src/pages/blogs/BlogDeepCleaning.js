@@ -18,7 +18,7 @@ const BlogDeepCleaning = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Why We Have To Hire Deep Cleaning Services?</h1>
@@ -33,7 +33,7 @@ const BlogDeepCleaning = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY WE HAVE TO HIRE DEEP CLEANING SERVICES?
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -51,7 +51,7 @@ const BlogDeepCleaning = () => {
 
                         {/* Why Need Deep Cleaning */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Why do you need a deep cleaning service?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555', marginBottom: '25px' }}>
@@ -64,7 +64,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Bad Odors That Do Not Disappear</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -78,7 +78,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Dust accumulates quickly</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -93,7 +93,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Hard surfaces appear dull, old, and filthy</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -107,7 +107,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Scale, grime, and dirt buildup</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -121,7 +121,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Your allergies have gotten worse</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -135,7 +135,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>You're Entering or Exiting a Space</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -149,7 +149,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>You're Organizing an Event</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -163,7 +163,7 @@ const BlogDeepCleaning = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>You believe your home requires a thorough cleaning</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -177,7 +177,7 @@ const BlogDeepCleaning = () => {
 
                         {/* What Makes Us Special */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHAT MAKES US SPECIAL TO OUR CUSTOMERS?
                             </h2>
                             
@@ -194,7 +194,7 @@ const BlogDeepCleaning = () => {
                                         borderRadius: '10px',
                                         boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                     }}>
-                                        <h3 style={{ color: '#667eea', marginBottom: '15px' }}>{item.title}</h3>
+                                        <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>{item.title}</h3>
                                         <p style={{ lineHeight: '1.8', color: '#555' }}>{item.content}</p>
                                     </div>
                                 ))}
@@ -203,7 +203,7 @@ const BlogDeepCleaning = () => {
 
                         {/* What's Included */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 What is Included in Our One-Time Quality Deep Cleaning Services?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555', marginBottom: '25px' }}>
@@ -240,7 +240,7 @@ const BlogDeepCleaning = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
                             <div>
@@ -266,7 +266,7 @@ const BlogDeepCleaning = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -286,7 +286,7 @@ const BlogDeepCleaning = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

@@ -18,7 +18,7 @@ const BlogGuesthouseHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Find Quality Guesthouse Housekeeping Near You</h1>
@@ -33,7 +33,7 @@ const BlogGuesthouseHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 FIND QUALITY GUESTHOUSE HOUSEKEEPING NEAR YOU
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -55,7 +55,7 @@ const BlogGuesthouseHousekeeping = () => {
 
                         {/* About Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 About Quality Housekeeping Services
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -75,7 +75,7 @@ const BlogGuesthouseHousekeeping = () => {
 
                         {/* Key Elements */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 The key elements of the GUESTHOUSE HOUSEKEEPING SERVICES we offer
                             </h2>
 
@@ -86,7 +86,7 @@ const BlogGuesthouseHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Let the lighting shine brightly</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Let the lighting shine brightly</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Even the most costly lights can eventually appear dim owing to dust, moth, insect, and various ashy 
                                         substance buildup. Particularly prone to getting coated in dust from exposure are lights with stained 
@@ -103,7 +103,7 @@ const BlogGuesthouseHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cleaning & Linen</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cleaning & Linen</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         The most well-functioning and spotless components of a guest house are the laundry and linens. After 
                                         all, this is where visitors go to take care of their personal hygiene needs, this is where visitors go 
@@ -120,7 +120,7 @@ const BlogGuesthouseHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Leaving the dust behind and welcoming the shine</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Leaving the dust behind and welcoming the shine</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         One of the most frequent and challenging elements of cleaning is dust. Even if you use vacuum cleaners 
                                         or dust smoke detectors to remove dust, it still becomes a chore to thoroughly clean these tools before 
@@ -136,7 +136,7 @@ const BlogGuesthouseHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Fittings & Furniture</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Fittings & Furniture</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         From a giant sofa bed to a small picture frame stand, furniture and fittings at whatever level of a 
                                         guest housekeeping service demand the utmost care. Furniture makes up a sizable portion of a company's 
@@ -154,7 +154,7 @@ const BlogGuesthouseHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Our Comprehensive Services
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -174,7 +174,7 @@ const BlogGuesthouseHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -199,7 +199,7 @@ const BlogGuesthouseHousekeeping = () => {
                                     </h4>
                                     
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px', fontSize: '1.1rem' }}>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px', fontSize: '1.1rem' }}>
                                             To increase sustainability, switch to eco-friendly products
                                         </h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
@@ -216,7 +216,7 @@ const BlogGuesthouseHousekeeping = () => {
                                     </div>
 
                                     <div style={{ marginTop: '20px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px', fontSize: '1.1rem' }}>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px', fontSize: '1.1rem' }}>
                                             Train staff to uphold standards consistently
                                         </h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
@@ -242,7 +242,7 @@ const BlogGuesthouseHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -262,7 +262,7 @@ const BlogGuesthouseHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

@@ -18,7 +18,7 @@ const BlogGymHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Why Should We Hire Quality Gym Housekeeping Services?</h1>
@@ -33,7 +33,7 @@ const BlogGymHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY SHOULD WE HIRE QUALITY GYM HOUSEKEEPING SERVICES?
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -61,7 +61,7 @@ const BlogGymHousekeeping = () => {
 
                         {/* Why Expert Cleaning */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY DOES YOUR GYM NEED EXPERT CLEANING SERVICES?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -79,7 +79,7 @@ const BlogGymHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Avoid making bacteria your workout partner</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Avoid making bacteria your workout partner</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         An exercise facility provides the ideal conditions for the growth of germs and fungi. A gym has high-contact 
                                         areas everywhere. Deep cleaning is therefore crucial for your company's development. The building is 
@@ -95,7 +95,7 @@ const BlogGymHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Fungus Management</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Fungus Management</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         QUALITY HOUSEKEEPING SERVICES IN NAGPUR are professionals at cleaning bathrooms and locker rooms. In locker 
                                         rooms, keeping surfaces clean and odours under control can be particularly difficult. The fact that there are 
@@ -111,7 +111,7 @@ const BlogGymHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>A good image</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>A good image</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Keeping your gym pristine and tranquil. A gym is a private setting, so your clients are aware of their 
                                         surroundings, especially as they gaze at one another in between sets. Their contentment depends on how clean 
@@ -126,7 +126,7 @@ const BlogGymHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Odour Reduction</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Odour Reduction</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Professionally trained cleaners are indispensable. While our PROFESSIONAL GYM HOUSEKEEPERS advise using metered 
                                         sprays for odour control to keep your gym feeling fresh in between cleanings, there is no alternative for our 
@@ -139,7 +139,7 @@ const BlogGymHousekeeping = () => {
 
                         {/* What We Offer */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHAT DO QHS OFFER UNDER GYM CLEANING SERVICES?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555', marginBottom: '25px' }}>
@@ -155,7 +155,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>General Cleaning</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -169,7 +169,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Equipment Cleaning</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -182,7 +182,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Window cleaning</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -195,7 +195,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Restroom cleaning</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -208,7 +208,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Disinfecting</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -221,7 +221,7 @@ const BlogGymHousekeeping = () => {
 
                         {/* Floor Services */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Professional Floor Cleaning Services
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -278,7 +278,7 @@ const BlogGymHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 MAINTENANCE OF EQUIPMENT
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -301,7 +301,7 @@ const BlogGymHousekeeping = () => {
 
                         {/* Why Choose Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY CHOOSE OUR GYM HOUSEKEEPING SERVICE IN NAGPUR INDIA?
                             </h2>
                             
@@ -315,7 +315,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ In addition to making your workers feel safer, keeping your gym and locker rooms clean will also make your customers 
@@ -325,7 +325,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Clean surroundings have been shown to increase exercise motivation. This means that without being exposed to dirt, 
@@ -336,7 +336,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ With the knowledge that your space is always clean, hygienic and safe thanks to our GYM HOUSEKEEPING SERVICES highly 
@@ -346,7 +346,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ According to statistics, a spotless gym increases member satisfaction and retention rates. A clean facility is always 
@@ -356,7 +356,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Sanitizing surfaces, floors, and gym equipment on a daily basis greatly minimises the likelihood that your workers and 
@@ -367,7 +367,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Gyms and recreation centres can get extremely crowded during peak hours. Since we are aware of this, we may adjust our 
@@ -377,7 +377,7 @@ const BlogGymHousekeeping = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Gym Cleaning Services In Nagpur India provided by our skilled and qualified janitors include cleaning, washing, and 
@@ -393,7 +393,7 @@ const BlogGymHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -404,7 +404,7 @@ const BlogGymHousekeeping = () => {
                                     </h4>
                                     
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Assurance advantages</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Assurance advantages</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             When you pick a respectable company like ours, we'll give you extra insurance protection on top of the cleaning 
                                             service. This is due to the fact that damages often come unexpectedly, and even then, we will handle the fallout 
@@ -413,7 +413,7 @@ const BlogGymHousekeeping = () => {
                                     </div>
 
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Ecological cleaning</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Ecological cleaning</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             The decisions you make as a business owner must be sustainable. You could lessen your overall carbon footprint by 
                                             choosing eco-friendly cleaning methods. Always choose your organic goods by hand.
@@ -421,7 +421,7 @@ const BlogGymHousekeeping = () => {
                                     </div>
 
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Typical calibre</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Typical calibre</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             A professional in place would be able to help you in the most faultless way imaginable, whether it be with turnaround 
                                             times or by providing you with full corner-to-corner cleaning assistance. This is the reason we have been in operation 
@@ -430,7 +430,7 @@ const BlogGymHousekeeping = () => {
                                     </div>
 
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Enhanced responsibility</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Enhanced responsibility</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             You can be confident that a company you hire will meet your expectations in the proper manner if they have a sizable 
                                             customer retention rate and a wide range of past projects.
@@ -478,7 +478,7 @@ const BlogGymHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -498,7 +498,7 @@ const BlogGymHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

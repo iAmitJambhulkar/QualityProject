@@ -32,7 +32,7 @@ const ServiceDetail = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+          background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
         }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
           <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>{serviceTitle}</h1>
@@ -78,7 +78,7 @@ const ServiceDetail = () => {
                   <div style={{ 
                     width: '80px', 
                     height: '80px', 
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
@@ -95,7 +95,7 @@ const ServiceDetail = () => {
                   <div style={{ 
                     width: '80px', 
                     height: '80px', 
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
@@ -112,7 +112,7 @@ const ServiceDetail = () => {
                   <div style={{ 
                     width: '80px', 
                     height: '80px', 
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
@@ -129,7 +129,7 @@ const ServiceDetail = () => {
                   <div style={{ 
                     width: '80px', 
                     height: '80px', 
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
@@ -159,7 +159,7 @@ const ServiceDetail = () => {
       </section>
 
       {/* CTA Section */}
-      <section style={{ padding: '80px 0', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
+      <section style={{ padding: '80px 0', background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)', color: 'white' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
             Ready to Book {serviceTitle}?
@@ -168,7 +168,7 @@ const ServiceDetail = () => {
             Contact us today for a free quote and experience professional cleaning services in {locationName}
           </p>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" className="btn btn-large" style={{ backgroundColor: 'white', color: '#667eea' }}>
+            <a href="/contact" className="btn btn-large" style={{ backgroundColor: 'white', color: '#1976D2' }}>
               Get Free Quote
             </a>
             <a 

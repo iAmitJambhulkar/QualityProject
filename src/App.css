@@ -10,10 +10,11 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FDD835 0%, #1976D2 100%);
     color: white;
     padding: 100px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
@@ -39,7 +40,7 @@ main {
 }
 
 .service-card {
-    background: white;
+    background: #FFFFFF;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -49,10 +50,11 @@ main {
 
 .service-card:hover {
     transform: translateY(-5px);
+    background-color: #FFF9C4;
 }
 
 .service-card h3 {
-    color: #333;
+    color: #1565C0;
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
@@ -65,7 +67,7 @@ main {
 /* About Section */
 .about-section {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #FFF9C4;
 }
 
 .about-content {
@@ -78,7 +80,7 @@ main {
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #1565C0;
 }
 
 .about-text p {
@@ -99,7 +101,7 @@ main {
 }
 
 .contact-form {
-    background: white;
+    background: #FFFFFF;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -113,7 +115,7 @@ main {
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
-    color: #333;
+    color: #1565C0;
 }
 
 .form-group input,
@@ -132,7 +134,7 @@ main {
 
 .contact-info h3 {
     margin-bottom: 20px;
-    color: #333;
+    color: #1565C0;
 }
 
 .contact-info p {
@@ -156,11 +158,10 @@ main {
         grid-template-columns: 1fr;
         padding: 40px 0;
     }
-}/* Ac
-tion Buttons Section */
+}/* Action Buttons Section */
 .action-buttons-section {
   padding: 60px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #FFF9C4 0%, #FDD835 100%);
 }
 
 .action-buttons {
@@ -177,11 +178,11 @@ tion Buttons Section */
   justify-content: center;
   gap: 12px;
   padding: 20px 25px;
-  background: white;
-  border: 2px solid #e9ecef;
+  background: #FFFFFF;
+  border: 2px solid #FDD835;
   border-radius: 12px;
   text-decoration: none;
-  color: #333;
+  color: #1565C0;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -192,8 +193,8 @@ tion Buttons Section */
 .action-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  border-color: #007bff;
-  color: #007bff;
+  border-color: #1976D2;
+  color: #1976D2;
 }
 
 .btn-icon {
@@ -218,9 +219,9 @@ tion Buttons Section */
 }
 
 .enquiry-btn:hover {
-  border-color: #007bff;
-  color: #007bff;
-  background: linear-gradient(135deg, #cce7ff 0%, #fff 100%);
+  border-color: #1976D2;
+  color: #1976D2;
+  background: linear-gradient(135deg, #FDD835 0%, #fff 100%);
 }
 
 .rate-btn:hover {
@@ -235,14 +236,14 @@ tion Buttons Section */
   bottom: 30px;
   right: 30px;
   z-index: 1000;
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
   color: white;
   border: none;
   border-radius: 50px;
   padding: 15px 25px;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(30, 136, 229, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -253,7 +254,7 @@ tion Buttons Section */
 
 .floating-enquiry-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(30, 136, 229, 0.6);
   color: white;
 }
 
@@ -315,7 +316,7 @@ l Screen Hero Section */
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -324,6 +325,7 @@ l Screen Hero Section */
   text-align: center;
   color: white;
   padding: 40px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-fullscreen h1 {
@@ -355,21 +357,21 @@ l Screen Hero Section */
 }
 
 .btn-secondary {
-  background-color: white;
-  color: #667eea;
+  background-color: #FFFFFF;
+  color: #1976D2;
   border: 2px solid white;
 }
 
 .btn-secondary:hover {
   background-color: transparent;
-  color: white;
+  color: #FFFFFF;
   border-color: white;
 }
 
 /* Content Section */
 .content-section {
   padding: 80px 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .content-wrapper {
@@ -382,16 +384,16 @@ l Screen Hero Section */
 }
 
 .content-block h2 {
-  color: #333;
+  color: #1565C0;
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 600;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #1976D2;
   padding-left: 20px;
 }
 
 .content-block h3 {
-  color: #444;
+  color: #1565C0;
   font-size: 1.5rem;
   margin-bottom: 15px;
   font-weight: 600;
@@ -407,9 +409,11 @@ l Screen Hero Section */
 
 .intro-text {
   font-size: 1.15rem;
-  color: #555;
+  color: #333;
   line-height: 1.9;
   font-weight: 400;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
 .benefits-list {
@@ -429,7 +433,19 @@ l Screen Hero Section */
 /* Reviews Section */
 .reviews-section {
   padding: 80px 0;
-  background-color: #f8f9fa;
+  background-color: #FFF9C4;
+}
+
+/* About Page Styles */
+.about-section {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.about-intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 /* Mobile Responsive */
@@ -489,13 +505,13 @@ l Screen Hero Section */
 }
 
 .mission-card {
-  background: white;
+  background: #FFFFFF;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #1976D2;
 }
 
 .mission-card:hover {
@@ -509,7 +525,7 @@ l Screen Hero Section */
 }
 
 .mission-card h2 {
-  color: #333;
+  color: #1565C0;
   font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: 600;
@@ -522,13 +538,13 @@ l Screen Hero Section */
 }
 
 .service-phase h3 {
-  color: #667eea;
+  color: #1976D2;
   margin-bottom: 20px;
   font-size: 1.8rem;
 }
 
 .service-phase h4 {
-  color: #333;
+  color: #1565C0;
   margin-bottom: 15px;
   font-size: 1.4rem;
 }
@@ -570,22 +586,22 @@ l Screen Hero Section */
 
 .job-tab {
   padding: 15px 40px;
-  background-color: white;
-  border: 2px solid #667eea;
+  background-color: #FFFFFF;
+  border: 2px solid #1976D2;
   border-radius: 8px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #667eea;
+  color: #1976D2;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .job-tab:hover {
-  background-color: #f0f0ff;
+  background-color: #FFF9C4;
 }
 
 .job-tab.active {
-  background-color: #667eea;
+  background-color: #1976D2;
   color: white;
 }
 
@@ -595,7 +611,7 @@ l Screen Hero Section */
 }
 
 .section-title {
-  color: #333;
+  color: #1565C0;
   font-size: 2.5rem;
   margin-bottom: 30px;
   font-weight: 600;
@@ -607,11 +623,11 @@ l Screen Hero Section */
 }
 
 .job-section h3 {
-  color: #667eea;
+  color: #1976D2;
   font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: 600;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #1976D2;
   padding-left: 20px;
 }
 
@@ -623,7 +639,7 @@ l Screen Hero Section */
 }
 
 .highlight-box {
-  background-color: #f8f9fa;
+  background-color: #FFF9C4;
   padding: 30px;
   border-radius: 10px;
   border-left: 4px solid #28a745;
@@ -631,7 +647,7 @@ l Screen Hero Section */
 }
 
 .highlight-box h4 {
-  color: #333;
+  color: #1565C0;
   font-size: 1.4rem;
   margin-bottom: 15px;
   font-weight: 600;
@@ -644,7 +660,7 @@ l Screen Hero Section */
 }
 
 .summary-box {
-  background: linear-gradient(135deg, #e8f4f8 0%, #f0f0ff 100%);
+  background: linear-gradient(135deg, #FDD835 0%, #FFF9C4 100%);
   padding: 30px;
   border-radius: 10px;
   margin-top: 40px;
@@ -660,13 +676,13 @@ l Screen Hero Section */
 .job-positions {
   margin-top: 40px;
   padding: 30px;
-  background-color: #fff;
-  border: 2px solid #667eea;
+  background-color: #FFFFFF;
+  border: 2px solid #1976D2;
   border-radius: 10px;
 }
 
 .job-positions h3 {
-  color: #333;
+  color: #1565C0;
   font-size: 1.8rem;
   margin-bottom: 20px;
   text-align: center;
@@ -680,7 +696,7 @@ l Screen Hero Section */
 }
 
 .position-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
@@ -719,7 +735,7 @@ l Screen Hero Section */
 }
 
 .faq-card {
-  background: white;
+  background: #FFFFFF;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -732,7 +748,7 @@ l Screen Hero Section */
 }
 
 .faq-card h4 {
-  color: #333;
+  color: #1565C0;
   font-size: 1.2rem;
   margin-bottom: 15px;
   font-weight: 600;

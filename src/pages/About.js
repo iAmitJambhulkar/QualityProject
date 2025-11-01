@@ -26,9 +26,9 @@ const About = () => {
       </section>
 
       {/* Our Principles Section */}
-      <section style={{ padding: '80px 0', backgroundColor: '#f8f9fa' }}>
+      <section style={{ padding: '80px 0', backgroundColor: '#E3F2FD' }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '50px', fontSize: '2.5rem', color: '#333' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '50px', fontSize: '2.5rem', color: '#0D47A1' }}>
             Our Principles
           </h2>
           <div className="services-grid">
@@ -58,7 +58,7 @@ const About = () => {
       </section>
 
       {/* Mission, Vision, Quality Policy */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '80px 0', backgroundColor: '#FFFFFF' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px' }}>
             <div className="mission-card">
@@ -68,7 +68,7 @@ const About = () => {
                 We as an organization want to see with multi-skill workforce to build world-class facility management company with the higher standard of professionalism, ethics, Quality. The Core Principle of the Company is to give the best value to the clients with Strict Adherence.
               </p>
             </div>
-            
+
             <div className="mission-card">
               <div className="card-icon">👁️</div>
               <h2>Our Vision</h2>
@@ -76,7 +76,7 @@ const About = () => {
                 To be recognized by our clients, employees and the industry as the leading Service provider of housekeeping Services.
               </p>
             </div>
-            
+
             <div className="mission-card">
               <div className="card-icon">✅</div>
               <h2>Our Quality Policy</h2>
@@ -89,9 +89,9 @@ const About = () => {
       </section>
 
       {/* Equipment & Tools Section */}
-      <section style={{ padding: '80px 0', backgroundColor: '#f8f9fa' }}>
+      <section style={{ padding: '80px 0', backgroundColor: '#E3F2FD' }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize: '2.5rem', color: '#333' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize: '2.5rem', color: '#0D47A1' }}>
             Professional Equipment & Tools
           </h2>
           <div className="content-block" style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -103,19 +103,19 @@ const About = () => {
       </section>
 
       {/* Services Phases Section */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '80px 0', backgroundColor: '#FFFFFF' }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '50px', fontSize: '2.5rem', color: '#333' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '50px', fontSize: '2.5rem', color: '#0D47A1' }}>
             Our Service Approach
           </h2>
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div className="service-phase">
-              <h3 style={{ color: '#667eea', marginBottom: '20px', fontSize: '1.8rem' }}>
+              <h3 style={{ color: '#1E88E5', marginBottom: '20px', fontSize: '1.8rem' }}>
                 For all your housekeeping requirements, we provide freshness in two phases:
               </h3>
-              
-              <div style={{ marginBottom: '30px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '10px', borderLeft: '4px solid #667eea' }}>
-                <h4 style={{ color: '#333', marginBottom: '15px', fontSize: '1.4rem' }}>a) Freshness Quality Housekeeping</h4>
+
+              <div style={{ marginBottom: '30px', padding: '30px', backgroundColor: '#E3F2FD', borderRadius: '10px', borderLeft: '4px solid #1E88E5' }}>
+                <h4 style={{ color: '#0D47A1', marginBottom: '15px', fontSize: '1.4rem' }}>a) Freshness Quality Housekeeping</h4>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
                   <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative', color: '#666' }}>
                     <span style={{ position: 'absolute', left: 0, color: '#28a745' }}>✓</span>
@@ -148,8 +148,8 @@ const About = () => {
                 </ul>
               </div>
 
-              <div style={{ padding: '30px', backgroundColor: '#e8f4f8', borderRadius: '10px', borderLeft: '4px solid #007bff' }}>
-                <h4 style={{ color: '#333', marginBottom: '15px', fontSize: '1.4rem' }}>b) Daily Manual Cleaning</h4>
+              <div style={{ padding: '30px', backgroundColor: '#E3F2FD', borderRadius: '10px', borderLeft: '4px solid #1E88E5' }}>
+                <h4 style={{ color: '#0D47A1', marginBottom: '15px', fontSize: '1.4rem' }}>b) Daily Manual Cleaning</h4>
                 <p style={{ color: '#666', fontSize: '1.1rem', lineHeight: '1.8' }}>
                   Comprehensive daily cleaning services to maintain pristine conditions throughout your facility.
                 </p>
@@ -160,11 +160,11 @@ const About = () => {
       </section>
 
       {/* ISO Certification Banner */}
-      <section style={{ padding: '60px 0', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white' }}>
+      <section style={{ padding: '60px 0', background: 'linear-gradient(135deg, #1E88E5 0%, #0D47A1 100%)', color: 'white' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '4rem', marginBottom: '20px' }}>🏆</div>
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>ISO 9001-2015 Certified</h2>
-          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#FFFFFF' }}>ISO 9001-2015 Certified</h2>
+          <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto', lineHeight: '1.8' }}>
             Our commitment to quality and excellence is recognized through our ISO 9001-2015 certification, ensuring world-class standards in all our services.
           </p>
         </div>

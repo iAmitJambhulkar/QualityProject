@@ -18,7 +18,7 @@ const BlogHospitalHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Find One of the Best Hospital Housekeeping in Nagpur India</h1>
@@ -33,7 +33,7 @@ const BlogHospitalHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 FIND ONE OF THE BEST HOSPITAL HOUSEKEEPING IN NAGPUR INDIA
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -58,7 +58,7 @@ const BlogHospitalHousekeeping = () => {
 
                         {/* Why Professional Housekeeping */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY PROFESSIONAL HOUSEKEEPING & CLEANING IS IMPERATIVE FOR HOSPITALS?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -74,7 +74,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Virus and Infections</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Virus and Infections</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         There are several diseases that can spread rapidly. Hospital housekeeping services aid in preventing the spread 
                                         of certain illnesses. The bacteria are tough. It can endure in almost any environment. It is everywhere—on 
@@ -90,7 +90,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>The Key Is Prevention</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>The Key Is Prevention</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Cleanliness is essential for keeping a healthcare setting like a hospital free of infections. Infections can be 
                                         prevented by having housekeeping personnel work closely with other staff members and patients. In order to maintain 
@@ -104,7 +104,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Disinfection vs. cleaning</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Disinfection vs. cleaning</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Disinfection and cleaning are very different processes. Disinfection should be followed by cleaning. When 
                                         housekeeping staff cleans, they scrub objects to remove filth, dust, and foreign matter using soap, water, 
@@ -125,7 +125,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Services for cleaning and preventing infections</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Services for cleaning and preventing infections</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Typhoid, cholera, and hepatitis B have all witnessed an increase in risk in recent years, according to medical 
                                         professionals and patients. Infection with these and other diseases must be avoided at all costs in a hospital. 
@@ -138,7 +138,7 @@ const BlogHospitalHousekeeping = () => {
 
                         {/* Why Choose Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY CHOOSE PROFESSIONAL SERVICES OF QUALITY HOUSEKEEPING SERVICES IN NAGPUR?
                             </h2>
 
@@ -147,7 +147,7 @@ const BlogHospitalHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Team of Qualified and Experienced Housekeeping Experts</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -162,7 +162,7 @@ const BlogHospitalHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Use of Branded Cleaning Equipment and Supplies</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -177,7 +177,7 @@ const BlogHospitalHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Excellent Cleaning Formula and High-Quality Germ Control Systems</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -195,7 +195,7 @@ const BlogHospitalHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Flexibility in Scheduling for Reliability and Safety</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -214,7 +214,7 @@ const BlogHospitalHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHAT ARE THE BENEFITS OF PROPER HOUSEKEEPING SERVICES IN A HOSPITAL?
                             </h2>
                             
@@ -258,7 +258,7 @@ const BlogHospitalHousekeeping = () => {
 
                         {/* Checklist */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHAT IS THE CHECK-LIST TO ENSURE PROPER SERVICES ARE RENDERED BY OUR PROFESSIONAL HOSPITAL HOUSEKEEPERS IN NAGPUR INDIA?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555', marginBottom: '25px' }}>
@@ -280,7 +280,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Hospital Rooms</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Hospital Rooms</h3>
                                     <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
                                         <li style={{ color: '#555' }}>• Cleanse your hands completely</li>
                                         <li style={{ color: '#555' }}>• Put on work gloves</li>
@@ -301,7 +301,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Bathrooms in patient rooms</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Bathrooms in patient rooms</h3>
                                     <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
                                         <li style={{ color: '#555' }}>• Cleanse your hands completely</li>
                                         <li style={{ color: '#555' }}>• Put on work gloves</li>
@@ -322,7 +322,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Examination Rooms</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Examination Rooms</h3>
                                     <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
                                         <li style={{ color: '#555' }}>• Cleanse your hands completely</li>
                                         <li style={{ color: '#555' }}>• Put on work gloves</li>
@@ -345,7 +345,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Waiting area</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Waiting area</h3>
                                     <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
                                         <li style={{ color: '#555' }}>• Cleanse your hands completely</li>
                                         <li style={{ color: '#555' }}>• Put on work gloves</li>
@@ -366,7 +366,7 @@ const BlogHospitalHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Areas of the hospital cafeteria</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Areas of the hospital cafeteria</h3>
                                     <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '8px' }}>
                                         <li style={{ color: '#555' }}>• Cleanse your hands completely</li>
                                         <li style={{ color: '#555' }}>• Put on work gloves</li>
@@ -388,7 +388,7 @@ const BlogHospitalHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -411,7 +411,7 @@ const BlogHospitalHousekeeping = () => {
                                     </p>
                                     
                                     <div style={{ marginTop: '20px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Work your way downwards:</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Work your way downwards:</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             When cleaning a room's surfaces, it is advisable to begin at the top and work your way down. This is due to the 
                                             possibility that while cleaning a high-up surface, dirt and debris may fall onto lower surfaces. This implies that 
@@ -420,7 +420,7 @@ const BlogHospitalHousekeeping = () => {
                                     </div>
 
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Clean first, then dirty:</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Clean first, then dirty:</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             The sequence in which you clean should also reflect how unclean each place is. Usually, it is advisable to start 
                                             with regions that are less generally unclean than others. By using that technique, you reduce your risk of spreading 
@@ -429,7 +429,7 @@ const BlogHospitalHousekeeping = () => {
                                     </div>
 
                                     <div style={{ marginTop: '15px' }}>
-                                        <h5 style={{ color: '#667eea', marginBottom: '10px' }}>Adhere to a system:</h5>
+                                        <h5 style={{ color: '#1976D2', marginBottom: '10px' }}>Adhere to a system:</h5>
                                         <p style={{ color: '#555', lineHeight: '1.8' }}>
                                             Your consistency and the strategy you use are, after all, the most important components of your cleaning effectiveness. 
                                             Your cleaning personnel will operate more efficiently and swiftly if you have a well-established protocol in place since 
@@ -469,7 +469,7 @@ const BlogHospitalHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -489,7 +489,7 @@ const BlogHospitalHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

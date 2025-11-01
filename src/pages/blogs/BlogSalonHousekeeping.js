@@ -18,7 +18,7 @@ const BlogSalonHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Let's Talk About Salon Housekeeping</h1>
@@ -33,7 +33,7 @@ const BlogSalonHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 LET'S TALK ABOUT SALON HOUSEKEEPING
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -52,7 +52,7 @@ const BlogSalonHousekeeping = () => {
 
                         {/* Why Hygiene is Crucial */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Why is it crucial to uphold hygienic standards in a beauty salon?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -77,7 +77,7 @@ const BlogSalonHousekeeping = () => {
 
                         {/* What Our Service Includes */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 What exactly does our SALON HOUSEKEEPING SERVICE include?
                             </h2>
 
@@ -88,7 +88,7 @@ const BlogSalonHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Window and Glass Door Cleaning</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Window and Glass Door Cleaning</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Glass labels are removed from glasses before our staff begins washing windows and glass doors to the 
                                         shine you've always desired but couldn't plan for much.
@@ -101,7 +101,7 @@ const BlogSalonHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Deep Dusting</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Deep Dusting</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our diligent team members take great care to thoroughly remove dust and small hair strands from all 
                                         the displayed stocks. Such rudimentary wiping of regions with high levels of dust promotes dust 
@@ -116,7 +116,7 @@ const BlogSalonHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cleaning of Glass and Mirrors</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cleaning of Glass and Mirrors</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Since glass and mirrors play a significant role in salons and beauty salons, our staff employs 
                                         specialised cleaners and equipment to clean glasses, mirrors, cabinets, and shelves. High-touch 
@@ -131,7 +131,7 @@ const BlogSalonHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Bathroom Cleaning and Sanitizing</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Bathroom Cleaning and Sanitizing</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Cleaning and sanitising the bathrooms is another service we do. Customers have an astounding results 
                                         from it.
@@ -144,7 +144,7 @@ const BlogSalonHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cleaning Furniture</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cleaning Furniture</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our staff has top-notch vacuum cleaners on hand for dusting and cleaning furniture and other upholstery. 
                                         Old markings that are difficult to remove properly include tape, glue, plaster, and drywall mud from 
@@ -159,7 +159,7 @@ const BlogSalonHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Floor Scrubbing</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Floor Scrubbing</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         The typical technique to assure the best floor cleaning by our experienced janitors starts with dry 
                                         mopping / sweeping, vacuuming, and then floor robotic scrubbing and buffing.
@@ -170,7 +170,7 @@ const BlogSalonHousekeeping = () => {
 
                         {/* Personal Hygiene */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 What significance does personal hygiene have at a salon?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -208,7 +208,7 @@ const BlogSalonHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -374,7 +374,7 @@ const BlogSalonHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Clean the furniture. After each usage, every seating area or salon chair should be disinfected
@@ -383,7 +383,7 @@ const BlogSalonHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Wash towels and linens on a regular basis
@@ -392,7 +392,7 @@ const BlogSalonHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Frequently sweep the floor
@@ -401,7 +401,7 @@ const BlogSalonHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Tools should be sterilised
@@ -410,7 +410,7 @@ const BlogSalonHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Work surfaces should be cleaned
@@ -419,7 +419,7 @@ const BlogSalonHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Hire our Best Salon Cleaning Service
@@ -436,7 +436,7 @@ const BlogSalonHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -456,7 +456,7 @@ const BlogSalonHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

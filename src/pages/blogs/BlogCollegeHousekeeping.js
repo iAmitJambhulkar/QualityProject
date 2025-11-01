@@ -18,7 +18,7 @@ const BlogCollegeHousekeeping = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>College Housekeeping Services Beyond Expectation</h1>
@@ -33,7 +33,7 @@ const BlogCollegeHousekeeping = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 COLLEGE HOUSEKEEPING SERVICES BEYOND EXPECTATION
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -50,7 +50,7 @@ const BlogCollegeHousekeeping = () => {
 
                         {/* Why Keep Colleges Clean */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 WHY SHOULD YOU KEEP COLLEGES CLEAN?
                             </h2>
                             
@@ -59,7 +59,7 @@ const BlogCollegeHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Health and Safety</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -74,7 +74,7 @@ const BlogCollegeHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Positive Example for Students</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -88,7 +88,7 @@ const BlogCollegeHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Disease Prevention</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -102,7 +102,7 @@ const BlogCollegeHousekeeping = () => {
                                     padding: '20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea'
+                                    borderLeft: '4px solid #1976D2'
                                 }}>
                                     <h4 style={{ color: '#333', marginBottom: '10px' }}>Infrastructure Protection</h4>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -122,7 +122,7 @@ const BlogCollegeHousekeeping = () => {
 
                         {/* Services We Provide */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Some of the characteristics and benefits we provide in our College Housekeeping Services
                             </h2>
 
@@ -133,7 +133,7 @@ const BlogCollegeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>All boards should be thoroughly cleaned</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>All boards should be thoroughly cleaned</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Housekeeping service is a neglected yet critical aspect of a school or college institution. The little 
                                         ones may see blotches of dust and un-rubbed chalk on the chalkboard before your sweeper. Furthermore, 
@@ -148,7 +148,7 @@ const BlogCollegeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Furnishings & Furniture</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Furnishings & Furniture</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Children scrape their pencils on their tables and colour their crayons on the doors. Our college 
                                         Housekeeping Services include the repair, regular maintenance, and cleaning of college furniture. Desks 
@@ -164,7 +164,7 @@ const BlogCollegeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Corridors, floors, and the playground</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Corridors, floors, and the playground</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our housekeepers are highly trained to clean, spray, and wash the walkways, hallways, playgrounds, and 
                                         amphitheatre floors, removing germs using chemicals such as phenols, disinfectants, and so on.
@@ -177,7 +177,7 @@ const BlogCollegeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cafeteria</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cafeteria</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Water and food are susceptible to contamination at all times of the year. Drinking water machines, 
                                         rooftop tanks, the mess, the kitchen, and the canteen all require high-quality sanitation and exact 
@@ -192,7 +192,7 @@ const BlogCollegeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Books and Libraries</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Books and Libraries</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Libraries are book storage facilities. Libraries are also breeding grounds for pests. Dimly lit 
                                         bookshelves stacked atop one another provide an appealing habitat for insects and bugs to live. Our 
@@ -207,7 +207,7 @@ const BlogCollegeHousekeeping = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Utilities for Stationery and Paper</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Utilities for Stationery and Paper</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Whether it's a laboratory, a staff room, or a classroom, stationery is the lifeblood of every school, 
                                         big or small. Pencil coils, eraser rubbers, ink refills, broken crayons, waste paper, test tubes, bio 
@@ -224,7 +224,7 @@ const BlogCollegeHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 We offer eco-friendly recycling
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -248,7 +248,7 @@ const BlogCollegeHousekeeping = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -361,7 +361,7 @@ const BlogCollegeHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Make an environmental pledge and help spread the news!
@@ -370,7 +370,7 @@ const BlogCollegeHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Perform a waste audit
@@ -379,7 +379,7 @@ const BlogCollegeHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Organize long-term move-in and move-out programmes
@@ -388,7 +388,7 @@ const BlogCollegeHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Avoid using plastic
@@ -397,7 +397,7 @@ const BlogCollegeHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Set up an on-campus secondhand store or organise clothes swaps
@@ -406,7 +406,7 @@ const BlogCollegeHousekeeping = () => {
                                             padding: '12px 15px',
                                             background: 'white',
                                             borderRadius: '8px',
-                                            borderLeft: '4px solid #667eea',
+                                            borderLeft: '4px solid #1976D2',
                                             color: '#555'
                                         }}>
                                             ✓ Create campus-wide reward schemes that encourage positive behaviour
@@ -423,7 +423,7 @@ const BlogCollegeHousekeeping = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -443,7 +443,7 @@ const BlogCollegeHousekeeping = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

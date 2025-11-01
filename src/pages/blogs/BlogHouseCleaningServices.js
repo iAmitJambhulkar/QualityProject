@@ -18,7 +18,7 @@ const BlogHouseCleaningServices = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%)'
+                    background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>House Cleaning Services for Homes</h1>
@@ -33,7 +33,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Introduction */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 QHS PROVIDES HOUSE CLEANING SERVICES FOR HOMES
                             </h2>
                             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#555' }}>
@@ -53,7 +53,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Why Choose Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Are you seeking the best and most economical cleaning services in Nagpur?
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -74,7 +74,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Why Pick Us */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Why pick us if you want the best house cleaning in Nagpur?
                             </h2>
                             <ul style={{
@@ -87,7 +87,7 @@ const BlogHouseCleaningServices = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ We can clean your home in accordance with whatever timetable you may have
@@ -96,7 +96,7 @@ const BlogHouseCleaningServices = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ As per the contract, we can pay for daily, weekly, or monthly visits
@@ -105,7 +105,7 @@ const BlogHouseCleaningServices = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ Proficient in a variety of cleaning tasks
@@ -114,7 +114,7 @@ const BlogHouseCleaningServices = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ For cleaning, we utilize eco-friendly materials
@@ -123,7 +123,7 @@ const BlogHouseCleaningServices = () => {
                                     padding: '15px 20px',
                                     background: '#f8f9ff',
                                     borderRadius: '8px',
-                                    borderLeft: '4px solid #667eea',
+                                    borderLeft: '4px solid #1976D2',
                                     color: '#555'
                                 }}>
                                     ✓ We employ techniques that are both time and money-saving
@@ -133,7 +133,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Benefits Section */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Benefits of selecting our HOUSE CLEANING SERVICES IN NAGPUR
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -180,7 +180,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Our Team */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Our team of cleaning experts
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -204,7 +204,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Services Offered */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 SERVICES THAT WE OFFER TO OUR CUSTOMERS
                             </h2>
 
@@ -215,7 +215,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Deep Cleaning of the Bedroom</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Deep Cleaning of the Bedroom</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         For an overall dust-free and clean living area, a bedroom cleaning service is crucial. As a result, 
                                         in Nagpur, your bedroom has to be tidy. When you want house cleaning services, our professional 
@@ -229,7 +229,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Deep Cleaning the Bathroom</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Deep Cleaning the Bathroom</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our staff members are experts in thoroughly cleaning bathrooms. In Nagpur, we have cleaned 
                                         every kind of cleaning service. So we guarantee complete satisfaction. You can expect great service 
@@ -244,7 +244,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Kitchen Deep Cleaning</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Kitchen Deep Cleaning</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         It's crucial to maintain your kitchen clean, and our HOUSE CLEANING SERVICES IN NAGPUR 
                                         tops kitchen deep cleaning assuring high-quality services. Should you be having any issues, you can fix 
@@ -258,7 +258,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Bathroom and Kitchen Deep Cleaning</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Bathroom and Kitchen Deep Cleaning</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         To safeguard your kitchen and bathroom, we highly recommend using our deep cleaning service. You may 
                                         order our service and receive a prompt response since QUALITY HOUSE CLEANING SERVICES NAGPUR is India's 
@@ -272,7 +272,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Shampooing of Textiles</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Shampooing of Textiles</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         It is crucial to remove the dust from your fabric before using our fabric shampooing cleaning services 
                                         to ensure your couch. As you already know, QHS is the top house cleaning service provider in India. 
@@ -287,7 +287,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Carpet Cleaning</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Carpet Cleaning</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our carpet cleaning service guarantees your complete happiness to safeguard your carpet shampooing. 
                                         It's crucial to protect your house and workplace. QUALITY HOUSEKEEPING SERVICES is the top-notch house 
@@ -301,7 +301,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Clean Leather Home</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Clean Leather Home</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         We provide cleaning services for leather homes. Our dry cleaning services for homes and carpets use 
                                         premium products to safeguard your couch, get rid of bacteria and grime, and restore your furniture 
@@ -315,7 +315,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Mattress Cleaning</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Mattress Cleaning</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         In Nagpur, we provide office mattress washing and dry cleaning services utilizing premium 
                                         products to protect your couch, to protect and maintain your home office. Since partitions are renowned 
@@ -329,7 +329,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Deep Cleaning at Home</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Deep Cleaning at Home</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Our expert personnel inspects these services on multiple quality levels to ensure that they meet the 
                                         specific customer needs. We provide a variety of home deep cleaning services, commercial house cleaning 
@@ -344,7 +344,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cleaning and Polishing the Floor</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cleaning and Polishing the Floor</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         To make sure that the fabric is not harmed in any way and to keep it safe and clean, our floor washing 
                                         and polishing service is performed with specialist equipment and by a professional cleaning service partner. 
@@ -358,7 +358,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cleaning of Above-Ground Water Storage Tanks</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cleaning of Above-Ground Water Storage Tanks</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         Upkeep of the above water storage tank. Even while cleaning a whole above-water storage tank might seem 
                                         like a daunting operation, it doesn't have to be difficult. Most of the time, cleaning your water tank 
@@ -372,7 +372,7 @@ const BlogHouseCleaningServices = () => {
                                     borderRadius: '10px',
                                     boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
                                 }}>
-                                    <h3 style={{ color: '#667eea', marginBottom: '15px' }}>Cleanup of Underground Sump</h3>
+                                    <h3 style={{ color: '#1976D2', marginBottom: '15px' }}>Cleanup of Underground Sump</h3>
                                     <p style={{ lineHeight: '1.8', color: '#555' }}>
                                         We have a lot of expertise in cleaning subterranean sump pumps. Cleaning of individual home sump drains 
                                         and sump drains in commercial buildings. Simply give us a call to schedule our underground sump cleaning 
@@ -384,7 +384,7 @@ const BlogHouseCleaningServices = () => {
 
                         {/* Couch Cleaning Section */}
                         <div className="content-block">
-                            <h2 style={{ color: '#667eea', marginBottom: '25px' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '25px' }}>
                                 Professional Couch Cleaning Services
                             </h2>
                             <p style={{ lineHeight: '1.8', color: '#555' }}>
@@ -419,7 +419,7 @@ const BlogHouseCleaningServices = () => {
                             padding: '40px',
                             borderRadius: '15px'
                         }}>
-                            <h2 style={{ color: '#667eea', marginBottom: '30px', textAlign: 'center' }}>
+                            <h2 style={{ color: '#1976D2', marginBottom: '30px', textAlign: 'center' }}>
                                 Frequently Asked Questions
                             </h2>
 
@@ -514,7 +514,7 @@ const BlogHouseCleaningServices = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
                 color: 'white'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
@@ -535,7 +535,7 @@ const BlogHouseCleaningServices = () => {
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <a href="/contact" className="btn btn-large" style={{
                             backgroundColor: 'white',
-                            color: '#667eea',
+                            color: '#1976D2',
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',

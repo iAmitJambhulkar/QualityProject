@@ -45,7 +45,7 @@
 
 .modal-header h2 {
   margin: 0;
-  color: #333;
+  color: #1565C0;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -67,8 +67,8 @@
 }
 
 .close-btn:hover {
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #FFF9C4;
+  color: #1565C0;
 }
 
 .enquiry-form {
@@ -83,7 +83,7 @@
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #333;
+  color: #1565C0;
   font-size: 0.9rem;
 }
 
@@ -101,8 +101,8 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  border-color: #1976D2;
+  box-shadow: 0 0 0 3px rgba(27, 38, 59, 0.1);
 }
 
 .form-group textarea {
@@ -111,7 +111,7 @@
 }
 
 .captcha-group {
-  background-color: #f8f9fa;
+  background-color: #FFF9C4;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #e9ecef;
@@ -131,8 +131,8 @@
 }
 
 .captcha-code {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+  color: #FDD835;
   padding: 15px 25px;
   border-radius: 8px;
   font-weight: 700;
@@ -140,17 +140,17 @@
   letter-spacing: 8px;
   font-family: 'Courier New', monospace;
   text-decoration: line-through;
-  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-decoration-color: rgba(253, 216, 53, 0.3);
   text-decoration-thickness: 1px;
   user-select: none;
   flex: 1;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .captcha-refresh {
-  background-color: #28a745;
-  color: white;
+  background-color: #FDD835;
+  color: #1565C0;
   border: none;
   padding: 12px 15px;
   border-radius: 8px;
@@ -164,7 +164,7 @@
 }
 
 .captcha-refresh:hover {
-  background-color: #218838;
+  background-color: #F9A825;
   transform: rotate(180deg);
 }
 
@@ -198,22 +198,25 @@
 }
 
 .cancel-btn {
-  background-color: #6c757d;
-  color: white;
+  background-color: #FFF9C4;
+  color: #1565C0;
+  border: 2px solid #1565C0;
 }
 
 .cancel-btn:hover {
-  background-color: #5a6268;
+  background-color: #d0d1cd;
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-  color: white;
+  background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+  color: #FDD835;
+  font-weight: 700;
 }
 
 .submit-btn:hover {
-  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+  background: linear-gradient(135deg, #1565C0 0%, #000000 100%);
   transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Mobile Responsive */
