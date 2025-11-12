@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import './Blogs.css';
 
 const Blogs = () => {
+  // Use data URIs or remove images to eliminate external requests
   const blogPosts = [
     {
       id: 1,
@@ -10,101 +12,99 @@ const Blogs = () => {
       category: "Home Cleaning",
       readTime: "10 min read",
       link: "/blogs/house-cleaning-services",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%231976D2' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3EHome Cleaning%3C/text%3E%3C/svg%3E"
     },
     {
       id: 2,
       title: "WHY WE ALWAYS CHOOSE TOPMOST OFFICE HOUSEKEEPING?",
-      excerpt: "Office Housekeeping goes beyond simple cleanliness to also take care of the work areas, keep the hallways and floors clear of trip hazards, and remove the rubbish. For office cleaning services, we provide qualified experts that are flexible and reasonably priced.",
+      excerpt: "Office Housekeeping goes beyond simple cleanliness to also take care of the work areas, keep the hallways and floors clear of trip hazards, and remove the rubbish.",
       date: "October 25, 2024",
       category: "Office Cleaning",
       readTime: "5 min read",
       link: "/blogs/office-housekeeping",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%232196F3' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3EOffice Cleaning%3C/text%3E%3C/svg%3E"
     },
     {
       id: 3,
       title: "LET'S TALK ABOUT SALON HOUSEKEEPING",
-      excerpt: "Simple vacuuming or brooming is insufficient. To keep your salon looking pleasant and appealing, you occasionally require expert cleaning. The salon is made to appear larger and more luxurious by adding additional mirrors, but with time, frequent foot traffic and product spills from beauty treatments can detract from the salon's attractiveness and opulence.",
+      excerpt: "Simple vacuuming or brooming is insufficient. To keep your salon looking pleasant and appealing, you occasionally require expert cleaning.",
       date: "October 20, 2024",
       category: "Salon Cleaning",
       readTime: "7 min read",
       link: "/blogs/salon-housekeeping",
-      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%23E91E63' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3ESalon Cleaning%3C/text%3E%3C/svg%3E"
     },
     {
       id: 4,
       title: "FIND QUALITY GUESTHOUSE HOUSEKEEPING NEAR YOU",
-      excerpt: "A guest is supposedly the jewel on the hospitality pillow. In the same vein, a guest is the most prized possession for a guest-house proprietor. GUESTHOUSE HOUSEKEEPING is something that just cannot be disregarded, regardless of whether it is at your guest-guest-house, a guest-guest-house lodge, a corporate guest house, or even just a guestroom.",
+      excerpt: "A guest is supposedly the jewel on the hospitality pillow. GUESTHOUSE HOUSEKEEPING is something that just cannot be disregarded.",
       date: "October 15, 2024",
       category: "Guest-House Cleaning",
       readTime: "6 min read",
       link: "/blogs/guesthouse-housekeeping",
-      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%239C27B0' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='42' fill='white'%3EGuesthouse%3C/text%3E%3C/svg%3E"
     },
     {
       id: 5,
       title: "COLLEGE HOUSEKEEPING SERVICES BEYOND EXPECTATION",
-      excerpt: "A school or college is a place where aspirations may take flight and the construction of a whole new inventive world can begin. An institution is about more than simply textbook learning; it is also about daily living etiquettes, of which sanitation and cleanliness are critical. This is where Institutional, School, and College Housekeeping Services come in.",
+      excerpt: "A school or college is a place where aspirations may take flight and the construction of a whole new inventive world can begin.",
       date: "October 10, 2024",
       category: "College Cleaning",
       readTime: "8 min read",
       link: "/blogs/college-housekeeping",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%233F51B5' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3ECollege%3C/text%3E%3C/svg%3E"
     },
     {
       id: 6,
       title: "WHY SHOULD WE HIRE QUALITY GYM HOUSEKEEPING SERVICES?",
-      excerpt: "For sports and leisure facilities of any size, QUALITY HOUSEKEEPING SERVICES offers gym housekeeping services in Nagpur India that guarantee a secure, dependable, and consistent experience. According to our experience, commercial clients frequently look to transfer their gym cleaning service provider because of inconsistent or subpar service.",
+      excerpt: "QUALITY HOUSEKEEPING SERVICES offers gym housekeeping services in Nagpur India that guarantee a secure, dependable, and consistent experience.",
       date: "October 5, 2024",
       category: "Gym Cleaning",
       readTime: "4 min read",
       link: "/blogs/gym-housekeeping",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%23FF5722' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3EGym Cleaning%3C/text%3E%3C/svg%3E"
     },
     {
       id: 7,
       title: "FIND ONE OF THE BEST HOSPITAL HOUSEKEEPING IN NAGPUR INDIA",
-      excerpt: "Germs and infections spread like wildfire. This is particularly true at hospitals, clinics, laboratories, and medical facilities where the general public is more prone to contracting diseases. People with illnesses, infections, and injuries crowd the halls of hospitals. Along with the patients, the patient's loved ones, friends, nurses, and even the doctors run the risk of contracting germs, viruses, and infections.",
+      excerpt: "Germs and infections spread like wildfire. This is particularly true at hospitals, clinics, laboratories, and medical facilities.",
       date: "September 30, 2024",
       category: "Hospital Cleaning",
       readTime: "6 min read",
       link: "/blogs/hospital-housekeeping",
-      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%234CAF50' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3EHospital%3C/text%3E%3C/svg%3E"
     },
     {
       id: 8,
       title: "SCHOOL HOUSEKEEPING SERVICES BEYOND EXPECTATION",
-      excerpt: "Dreams can take flight in educational institutions like schools and colleges, where the beginnings of a brand-new, inventive universe can also be found. In addition to teaching from textbooks, an institution should also teach students about daily manners, of which cleanliness and hygiene are essential components. The institution, college, and school housekeeping services enter the picture at this point. In the end, shouldn't a school practise what it preaches?",
+      excerpt: "Dreams can take flight in educational institutions like schools and colleges, where the beginnings of a brand-new, inventive universe can also be found.",
       date: "September 30, 2024",
       category: "School Cleaning",
       readTime: "6 min read",
       link: "/blogs/school-housekeeping",
-      image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%23FFC107' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3ESchool%3C/text%3E%3C/svg%3E"
     },
     {
       id: 9,
       title: "WHY WE HAVE TO HIRE DEEP CLEANING SERVICES?",
-      excerpt: "Do you require a thorough cleaning service? If you want to be certain that your cleaning specialist will truly make things sparkling, go no further than our DEEP CLEANING IN NAGPUR INDIA. A thorough cleaning is the greatest approach to ensure that your home starts clean and stays clean. Parts of your house, especially the kitchen and bathrooms, may acquire layers of filth, oil, and grime that routine cleaning cannot remove.",
+      excerpt: "Do you require a thorough cleaning service? A thorough cleaning is the greatest approach to ensure that your home starts clean and stays clean.",
       date: "September 30, 2024",
       category: "Deep Cleaning",
       readTime: "6 min read",
       link: "/blogs/deep-cleaning",
-      image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%23009688' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' fill='white'%3EDeep Cleaning%3C/text%3E%3C/svg%3E"
     },
     {
       id: 10,
       title: "THE BEST SOFA CLEANING SERVICES IN NAGPUR INDIA, JUST CHECK IT!",
-      excerpt: "Holiness is frequently related to cleanliness. This saying can truly relate to sofa cleaning too. A clean atmosphere draws good energy, whereas a filthy environment invites pests. Pests can be quite bothersome if not dealt with promptly. Their quick reproduction allows them to spread like wildfire in no time. They not only pollute and harm the environment, but they may also cause considerable damage to furniture and other goods when the paints penetrate and hollow out hardwood furniture.",
+      excerpt: "Holiness is frequently related to cleanliness. A clean atmosphere draws good energy, whereas a filthy environment invites pests.",
       date: "September 30, 2024",
       category: "Sofa & Carpet Cleaning",
       readTime: "6 min read",
       link: "/blogs/sofa-carpet-cleaning",
-      image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
+      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect fill='%23795548' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='42' fill='white'%3ESofa %26 Carpet%3C/text%3E%3C/svg%3E"
     }
   ];
-
-  const categories = ["All", "Home Cleaning", "Office Cleaning", "Salon Cleaning", "Guest-house Cleaning", "College Cleaning", "Gym Cleaning", "Hospital Cleaning", "School Cleaning", "Deep Cleaning", "Sofa & Carpet Cleaning"];
 
   return (
     <div>
@@ -117,58 +117,20 @@ const Blogs = () => {
       </section>
 
       {/* Featured Post */}
-      <section style={{ padding: '80px 0', backgroundColor: '#f8f9fa' }}>
+      <section className="featured-section">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '50px' }}>Featured Article</h2>
-          <Link
-            to={blogPosts[0].link}
-            style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
-          >
-            <div style={{
-              background: 'white',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
-              gap: '0',
-              cursor: 'pointer',
-              transition: 'transform 0.3s'
-            }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-            >
-              <div style={{
-                height: '300px',
-                backgroundImage: `url(${blogPosts[0].image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}></div>
-              <div style={{ padding: '40px' }}>
-                <span style={{
-                  color: '#007bff',
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  textTransform: 'uppercase'
-                }}>
-                  {blogPosts[0].category}
-                </span>
-                <h3 style={{ margin: '10px 0 15px', fontSize: '1.8rem' }}>
-                  {blogPosts[0].title}
-                </h3>
-                <p style={{ color: '#666', marginBottom: '20px', lineHeight: '1.6' }}>
-                  {blogPosts[0].excerpt}
-                </p>
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  fontSize: '14px',
-                  color: '#888'
-                }}>
-                  <span>{blogPosts[0].date}</span>
-                  <span>{blogPosts[0].readTime}</span>
-                </div>
+          <Link to={blogPosts[0].link} className="featured-card">
+            <div className="featured-image">
+              <img src={blogPosts[0].image} alt={blogPosts[0].title} />
+            </div>
+            <div className="featured-content">
+              <span className="blog-category">{blogPosts[0].category}</span>
+              <h3 className="featured-title">{blogPosts[0].title}</h3>
+              <p className="featured-excerpt">{blogPosts[0].excerpt}</p>
+              <div className="blog-meta">
+                <span>{blogPosts[0].date}</span>
+                <span>{blogPosts[0].readTime}</span>
               </div>
             </div>
           </Link>
@@ -176,59 +138,23 @@ const Blogs = () => {
       </section>
 
       {/* Blog Grid */}
-      <section style={{ padding: '80px 0' }}>
+      <section className="blog-grid-section">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '50px' }}>Latest Articles</h2>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-            gap: '30px'
-          }}>
+          <div className="blog-grid">
             {blogPosts.slice(1).map(post => (
-              <Link
-                key={post.id}
-                to={post.link}
-                className="service-card"
-                style={{
-                  textAlign: 'left',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                  display: 'block'
-                }}
-              >
-                <div style={{
-                  height: '200px',
-                  backgroundImage: `url(${post.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  borderRadius: '8px',
-                  marginBottom: '20px'
-                }}></div>
-                <span style={{
-                  color: '#007bff',
-                  fontSize: '12px',
-                  fontWeight: '600',
-                  textTransform: 'uppercase'
-                }}>
-                  {post.category}
-                </span>
-                <h3 style={{ margin: '10px 0 15px', fontSize: '1.3rem' }}>
-                  {post.title}
-                </h3>
-                <p style={{ color: '#666', marginBottom: '20px', lineHeight: '1.6' }}>
-                  {post.excerpt}
-                </p>
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  fontSize: '12px',
-                  color: '#888',
-                  borderTop: '1px solid #eee',
-                  paddingTop: '15px'
-                }}>
-                  <span>{post.date}</span>
-                  <span>{post.readTime}</span>
+              <Link key={post.id} to={post.link} className="service-card blog-card">
+                <div className="blog-card-image">
+                  <img src={post.image} alt={post.title} />
+                </div>
+                <div className="blog-card-content">
+                  <span className="blog-card-category">{post.category}</span>
+                  <h3 className="blog-card-title">{post.title}</h3>
+                  <p className="blog-card-excerpt">{post.excerpt}</p>
+                  <div className="blog-card-meta">
+                    <span>{post.date}</span>
+                    <span>{post.readTime}</span>
+                  </div>
                 </div>
               </Link>
             ))}
@@ -236,32 +162,24 @@ const Blogs = () => {
         </div>
       </section>
 
+      {/* Get Free Quote CTA */}
+      <section className="quote-cta-section">
+        <div className="container">
+          <h2 className="quote-cta-title">Need Professional Cleaning Services?</h2>
+          <p className="quote-cta-text">Get a free, no-obligation quote for your cleaning requirements</p>
+          <Link to="/quote" className="btn btn-secondary btn-large">Get Free Quote</Link>
+        </div>
+      </section>
+
       {/* Newsletter Signup */}
-      <section style={{ padding: '80px 0', backgroundColor: '#f8f9fa' }}>
-        <div className="container" style={{ textAlign: 'center' }}>
+      <section className="newsletter-section">
+        <div className="container">
           <h2 style={{ marginBottom: '20px' }}>Stay Updated with Cleaning Tips</h2>
           <p style={{ marginBottom: '30px', fontSize: '1.1rem', color: '#666' }}>
             Subscribe to our newsletter for the latest cleaning tips, guides, and special offers
           </p>
-          <div style={{
-            maxWidth: '500px',
-            margin: '0 auto',
-            display: 'flex',
-            gap: '10px',
-            flexWrap: 'wrap'
-          }}>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              style={{
-                flex: 1,
-                padding: '12px',
-                border: '1px solid #ddd',
-                borderRadius: '5px',
-                fontSize: '16px',
-                minWidth: '250px'
-              }}
-            />
+          <div className="newsletter-form">
+            <input type="email" placeholder="Enter your email address" className="newsletter-input" />
             <button className="btn btn-primary">Subscribe</button>
           </div>
         </div>

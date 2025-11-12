@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { openEnquiryModal, closeEnquiryModal } from '../store/slices/uiSlice';
 import EnquiryModal from './EnquiryModal';
 
 const FloatingEnquiryBtn = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const dispatch = useDispatch();
+  const isModalOpen = useSelector((state) => state.ui.isEnquiryModalOpen);
 
   const handleOpenModal = () => {
-    setIsModalOpen(true);
+    dispatch(openEnquiryModal());
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
+    dispatch(closeEnquiryModal());
   };
 
   return (

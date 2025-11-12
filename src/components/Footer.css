@@ -13,95 +13,51 @@
   background-color: transparent !important;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 50px;
-  margin-bottom: 30px;
-  align-items: start;
-  background-color: transparent !important;
-}
-
-@media (max-width: 992px) {
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-}
-
-.footer-section {
-  background-color: transparent !important;
-}
-
-.footer-section h3 {
+/* Quick Links Section - Centered */
+.footer-links-section {
+  text-align: center;
+  padding: 20px 0;
   margin-bottom: 20px;
-  color: #fff !important;
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 
-.footer-section h4 {
+.footer-links-section h4 {
   margin-bottom: 20px;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-.footer-section p {
-  color: #ccc;
-  line-height: 1.8;
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-.about-section {
-  background-color: transparent !important;
-}
-
-.about-section p {
-  max-width: 600px;
-  font-size: 1.05rem;
-  color: #ccc !important;
-}
-
-.links-section {
-  background-color: transparent !important;
-}
-
-.links-section ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  background-color: transparent !important;
-}
-
-.footer-section ul {
+.quick-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-section ul li {
-  margin-bottom: 8px;
-}
-
-.footer-section ul li a {
+.quick-links-list li a {
   color: #ccc;
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1rem;
-  display: inline-block;
+  font-weight: 500;
 }
 
-.footer-section ul li a:hover {
+.quick-links-list li a:hover {
   color: #007bff;
-  padding-left: 5px;
 }
+
+@media (max-width: 768px) {
+  .quick-links-list {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+
 
 .footer-bottom {
   border-top: 1px solid #555;
@@ -117,22 +73,6 @@
 @media (max-width: 768px) {
   .footer {
     padding: 30px 0 15px;
-  }
-
-  .footer-section h3 {
-    font-size: 1.5rem;
-  }
-
-  .footer-section h4 {
-    font-size: 1.1rem;
-  }
-
-  .about-section p {
-    font-size: 0.95rem;
-  }
-
-  .footer-section ul li a {
-    font-size: 0.95rem;
   }
 }
 

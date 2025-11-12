@@ -168,7 +168,7 @@ const ServiceDetail = () => {
             Contact us today for a free quote and experience professional cleaning services in {locationName}
           </p>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" className="btn btn-large" style={{ backgroundColor: 'white', color: '#1976D2' }}>
+            <a href="/quote" className="btn btn-large" style={{ backgroundColor: 'white', color: '#1976D2' }}>
               Get Free Quote
             </a>
             <a 

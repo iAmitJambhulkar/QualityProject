@@ -3,19 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@reduxjs/toolkit": "^2.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prebuild": "node scripts/optimize-build.js",
+    "build": "craco build --config config/craco.config.js",
+    "postbuild": "node scripts/verify-build.js",
+    "build:analyze": "npm run build && npx source-map-explorer 'build/static/js/*.js'",
+    "build:prod": "npm run build",
+    "serve": "npx serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -36,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "compression-webpack-plugin": "^11.1.0"
   }
 }

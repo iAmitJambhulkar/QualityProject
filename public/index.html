@@ -3,21 +3,40 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="public/Img/icon.jpg" />
+  <link rel="icon" href="%PUBLIC_URL%/Img/icon.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#1976D2" />
   <meta name="description" content="Quality Housekeeping India - Professional cleaning and housekeeping services" />
-  <link rel="apple-touch-icon" href="public/Img/icon.jpg" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/Img/icon.webp" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Inline critical font-face to eliminate external requests */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300 800;
+      font-display: swap;
+      src: local('Poppins'), local('Arial'), sans-serif;
+    }
+    body { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+  </style>
+  
   <title>Quality Housekeeping India</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script>
+    // Register service worker for aggressive caching
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .catch(() => {});
+      });
+    }
+  </script>
 </body>
 
 </html>

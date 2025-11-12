@@ -1,0 +1,61 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+  formData: {
+    name: '',
+    phone: '',
+    email: '',
+    enquiry: '',
+  },
+  captchaInput: '',
+  captchaCode: '',
+  isSubmitting: false,
+  submitSuccess: false,
+  submitError: null,
+};
+
+const enquirySlice = createSlice({
+  name: 'enquiry',
+  initialState,
+  reducers: {
+    updateFormField: (state, action) => {
+      const { field, value } = action.payload;
+      state.formData[field] = value;
+    },
+    setCaptchaInput: (state, action) => {
+      state.captchaInput = action.payload;
+    },
+    setCaptchaCode: (state, action) => {
+      state.captchaCode = action.payload;
+    },
+    resetForm: (state) => {
+      state.formData = initialState.formData;
+      state.captchaInput = '';
+      state.submitSuccess = false;
+      state.submitError = null;
+    },
+    setSubmitting: (state, action) => {
+      state.isSubmitting = action.payload;
+    },
+    setSubmitSuccess: (state, action) => {
+      state.submitSuccess = action.payload;
+      state.isSubmitting = false;
+    },
+    setSubmitError: (state, action) => {
+      state.submitError = action.payload;
+      state.isSubmitting = false;
+    },
+  },
+});
+
+export const {
+  updateFormField,
+  setCaptchaInput,
+  setCaptchaCode,
+  resetForm,
+  setSubmitting,
+  setSubmitSuccess,
+  setSubmitError,
+} = enquirySlice.actions;
+
+export default enquirySlice.reducer;

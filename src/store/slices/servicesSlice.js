@@ -1,0 +1,54 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+  nagpurServices: [
+    "Office Housekeeping Services",
+    "Hotel Housekeeping Service",
+    "Hospital Housekeeping Services",
+    "Salon Housekeeping Services",
+    "Bank Housekeeping Services",
+    "Guesthouse Housekeeping Services",
+    "Mall Housekeeping Services",
+    "Gym Cleaning Services",
+    "School Housekeeping Services",
+    "College Housekeeping Services",
+    "Security Guard Services",
+    "Housekeeping Manpower",
+    "Home Cleaning Services",
+    "Sofa Cleaning Services",
+    "Deep Cleaning Services",
+    "Carpet Cleaning Services",
+    "Chair Cleaning Services",
+    "Building Cleaning Services",
+    "Floor Cleaning Services",
+    "Tiles Cleaning Services",
+    "Office Boy Services"
+  ],
+  jabalpurServices: [
+    "Housekeeping And Cleaning",
+    "Gym Cleaning Services",
+    "School Housekeeping Services",
+    "Hotel Housekeeping Service",
+    "Hospital Housekeeping Services",
+    "Office Housekeeping Services",
+    "College Housekeeping Services",
+    "Office Chair Cleaning Services",
+    "Home Cleaning Services",
+    "Sofa Cleaning Services",
+    "Carpet Cleaning Services",
+    "Bank Housekeeping Services",
+    "Guesthouse Housekeeping Services",
+    "Office Boy Services",
+    "Housekeeping Manpower Supply"
+  ],
+};
+
+const servicesSlice = createSlice({
+  name: 'services',
+  initialState,
+  reducers: {
+    // Add reducers if you need to dynamically update services
+  },
+});
+
+export default servicesSlice.reducer;

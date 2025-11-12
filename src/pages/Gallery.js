@@ -107,7 +107,7 @@ const Gallery = () => {
             Contact us today to experience the same level of professional cleaning service
           </p>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" className="btn btn-primary">Get Free Quote</a>
+            <a href="/quote" className="btn btn-primary">Get Free Quote</a>
             <a href="tel:+91[phone_number]" className="btn">Call Now</a>
           </div>
         </div>

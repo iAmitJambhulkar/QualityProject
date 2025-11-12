@@ -1,27 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import EnquiryModal from '../components/EnquiryModal';
 
 const Home = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleClientReviews = () => {
-    const reviewsSection = document.querySelector('.reviews-section');
-    if (reviewsSection) {
-      reviewsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleSeeAllReviews = () => {
     window.open('https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDYstEyqMisyYLRSNagwTkoxSTY0TEq1MDIztTROsjKoSDM1SkmzMDZJNU8zSDUxS_OSLSxNzMksqVTIyC8tTs1OTS3IzEtXKE4tKstMTi0GACy7Gy8&q=quality+housekeeping+services&rlz=1C1ONGR_enIN1042IN1042&oq=qu&aqs=chrome.2.69i60j69i57j46i39i175i199j46i67i131i199i433i465j69i60l4.3703j0j7&sourceid=chrome&ie=UTF-8#lrd=0x3bd4c11be826593b:0xf52df834e7f0e46f,1,,,,', '_blank');
-  };
-
-  const handleSendEnquiry = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
   };
 
   const handleRateReviews = () => {
@@ -39,12 +22,9 @@ const Home = () => {
             Professional, Eco-Friendly & Reliable Housekeeping Solutions
           </p>
           <div className="hero-buttons">
-            <Link to="/contact" className="btn btn-primary btn-large">
+            <Link to="/quote" className="btn btn-primary btn-large">
               Get Free Quote
             </Link>
-            <button onClick={handleSendEnquiry} className="btn btn-secondary btn-large">
-              Request a Call
-            </button>
           </div>
         </div>
       </section>
@@ -154,12 +134,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-
-
-      <EnquiryModal 
-        isOpen={isModalOpen} 
-        onClose={handleCloseModal} 
-      />
     </div>
   );
 };

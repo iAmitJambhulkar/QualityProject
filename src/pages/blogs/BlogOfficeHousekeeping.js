@@ -456,7 +456,7 @@ const BlogOfficeHousekeeping = () => {
                         Contact us today for a free consultation and quote!
                     </p>
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="/contact" className="btn btn-large" style={{
+                        <a href="/quote" className="btn btn-large" style={{
                             backgroundColor: 'white',
                             color: '#1976D2',
                             padding: '15px 40px',

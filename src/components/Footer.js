@@ -6,24 +6,18 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-content">
-          <div className="footer-section about-section">
-            <h3>Quality Housekeeping Services</h3>
-            <p>Professional cleaning and housekeeping services for homes and offices across India.</p>
-          </div>
-
-          <div className="footer-section links-section">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/gallery">Gallery</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/blogs">Blogs</a></li>
-              <li><a href="/jobs">Jobs</a></li>
-              <li><a href="/contact">Contact Us</a></li>
-            </ul>
-          </div>
+        {/* Quick Links Section */}
+        <div className="footer-links-section">
+          <h4>Quick Links</h4>
+          <ul className="quick-links-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/jobs">Jobs</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
         </div>
 
         {/* Offices Section - Horizontal Layout */}
@@ -49,7 +43,7 @@ const Footer = () => {
               <h5>Gondia Branch Office</h5>
               <p>📍 Behind New Busstop, Marartoly, Gondia - 441614</p>
               <p>🕒 10 AM to 7 PM (Mon - Sat)</p>
-              <p>📞 +91 - 7219021680</p>
+              <p>📞 +91 - 9370606505</p>
             </div>
           </div>
         </div>

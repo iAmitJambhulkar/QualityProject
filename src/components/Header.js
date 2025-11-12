@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { FaPhone } from 'react-icons/fa6';
+import { toggleMenu, closeMenu, setActiveDropdown, setIsMobile } from '../store/slices/uiSlice';
 import './Header.css';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const dispatch = useDispatch();
+  const { isMenuOpen, activeDropdown, isMobile } = useSelector((state) => state.ui);
+  const { nagpurServices, jabalpurServices } = useSelector((state) => state.services);
+  const [activeCityDropdown, setActiveCityDropdown] = React.useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-      if (window.innerWidth > 768) {
-        setIsMenuOpen(false);
-        setActiveDropdown(null);
-      }
+      dispatch(setIsMobile(window.innerWidth <= 768));
     };
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [dispatch]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -31,85 +31,77 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    if (isMenuOpen) {
-      setActiveDropdown(null);
-    }
+  const handleToggleMenu = () => {
+    dispatch(toggleMenu());
   };
 
   const handleDropdownHover = (dropdown) => {
     if (!isMobile) {
-      setActiveDropdown(dropdown);
+      dispatch(setActiveDropdown(dropdown));
     }
   };
 
   const handleDropdownLeave = () => {
     if (!isMobile) {
-      setActiveDropdown(null);
+      dispatch(setActiveDropdown(null));
     }
   };
 
   const handleDropdownClick = (dropdown) => {
     if (isMobile) {
-      setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+      dispatch(setActiveDropdown(activeDropdown === dropdown ? null : dropdown));
+      setActiveCityDropdown(null); // Reset city dropdown when toggling services
     }
   };
 
-  const nagpurServices = [
-    "Office Housekeeping Services",
-    "Hotel Housekeeping Service",
-    "Hospital Housekeeping Services",
-    "Salon Housekeeping Services",
-    "Bank Housekeeping Services",
-    "Guesthouse Housekeeping Services",
-    "Mall Housekeeping Services",
-    "Gym Cleaning Services",
-    "School Housekeeping Services",
-    "College Housekeeping Services",
-    "Security Guard Services",
-    "Housekeeping Manpower",
-    "Home Cleaning Services",
-    "Sofa Cleaning Services",
-    "Deep Cleaning Services",
-    "Carpet Cleaning Services",
-    "Chair Cleaning Services",
-    "Building Cleaning Services",
-    "Floor Cleaning Services",
-    "Tiles Cleaning Services",
-    "Office Boy Services"
-  ];
-
-  const jabalpurServices = [
-    "Housekeeping And Cleaning",
-    "Gym Cleaning Services",
-    "School Housekeeping Services",
-    "Hotel Housekeeping Service",
-    "Hospital Housekeeping Services",
-    "Office Housekeeping Services",
-    "College Housekeeping Services",
-    "Office Chair Cleaning Services",
-    "Home Cleaning Services",
-    "Sofa Cleaning Services",
-    "Carpet Cleaning Services",
-    "Bank Housekeeping Services",
-    "Guesthouse Housekeeping Services",
-    "Office Boy Services",
-    "Housekeeping Manpower Supply"
-  ];
+  const handleCityClick = (city) => {
+    if (isMobile) {
+      setActiveCityDropdown(activeCityDropdown === city ? null : city);
+    }
+  };
 
   const createSlug = (text) => {
     return text.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
   };
 
   const handleLinkClick = () => {
-    setIsMenuOpen(false);
-    setActiveDropdown(null);
+    dispatch(closeMenu());
+  };
+
+  const getServiceUrl = (service, location) => {
+    const serviceMap = {
+      "Office Housekeeping Services": location === 'jabalpur' ? '/office-housekeeping-jabalpur' : `/office-housekeeping/${location}`,
+      "Hotel Housekeeping Service": location === 'jabalpur' ? '/hotel-housekeeping-jabalpur' : `/hotel-housekeeping/${location}`,
+      "Hospital Housekeeping Services": location === 'jabalpur' ? '/hospital-housekeeping-jabalpur' : `/hospital-housekeeping/${location}`,
+      "Salon Housekeeping Services": `/salon-housekeeping/${location}`,
+      "Bank Housekeeping Services": location === 'jabalpur' ? '/bank-housekeeping-jabalpur' : `/bank-housekeeping/${location}`,
+      "Guesthouse Housekeeping Services": location === 'jabalpur' ? '/guesthouse-housekeeping-jabalpur' : `/guesthouse-housekeeping/${location}`,
+      "Mall Housekeeping Services": `/mall-housekeeping/${location}`,
+      "Gym Cleaning Services": location === 'jabalpur' ? '/gym-cleaning-jabalpur' : `/gym-cleaning/${location}`,
+      "School Housekeeping Services": location === 'jabalpur' ? '/school-housekeeping-jabalpur' : `/school-housekeeping/${location}`,
+      "College Housekeeping Services": location === 'jabalpur' ? '/college-housekeeping-jabalpur' : `/college-housekeeping/${location}`,
+      "Security Guard Services": `/security-guard-services/${location}`,
+      "Housekeeping Manpower": `/housekeeping-manpower/${location}`,
+      "Housekeeping Manpower Supply": '/housekeeping-manpower-jabalpur',
+      "Home Cleaning Services": location === 'jabalpur' ? '/home-cleaning-jabalpur' : `/home-cleaning/${location}`,
+      "Sofa Cleaning Services": location === 'jabalpur' ? '/sofa-cleaning-jabalpur' : `/sofa-cleaning/${location}`,
+      "Deep Cleaning Services": `/deep-cleaning/${location}`,
+      "Carpet Cleaning Services": location === 'jabalpur' ? '/carpet-cleaning-jabalpur' : `/carpet-cleaning/${location}`,
+      "Chair Cleaning Services": `/chair-cleaning/${location}`,
+      "Building Cleaning Services": `/building-cleaning/${location}`,
+      "Floor Cleaning Services": `/floor-cleaning/${location}`,
+      "Tiles Cleaning Services": `/tiles-cleaning/${location}`,
+      "Office Boy Services": location === 'jabalpur' ? '/office-boy-services-jabalpur' : `/office-boy-services/${location}`,
+      "Housekeeping And Cleaning": `/housekeeping-and-cleaning/${location}`,
+      "Office Chair Cleaning Services": `/office-chair-cleaning/${location}`,
+    };
+
+    return serviceMap[service] || `/services/${location}/${createSlug(service)}`;
   };
 
   return (
     <>
-      {isMenuOpen && <div className="menu-backdrop" onClick={toggleMenu}></div>}
+      {isMenuOpen && <div className="menu-backdrop" onClick={handleToggleMenu}></div>}
       <header className="header">
         <div className="container">
           <div className="nav-wrapper">
@@ -117,6 +109,9 @@ const Header = () => {
               <img
                 src="/Img/qualitylogo.webp"
                 alt="Quality Housekeeping India Logo"
+                width="200"
+                height="60"
+                loading="eager"
                 style={{ height: "60px", objectFit: "contain" }}
               />
             </Link>
@@ -139,123 +134,93 @@ const Header = () => {
                   Services
                 </span>
                 <div className={`dropdown-menu mega-menu ${activeDropdown === 'services' ? 'show' : ''}`}>
-                  <div className="mega-menu-content">
-                    <div className="mega-menu-column">
-                      <h4>Nagpur</h4>
-                      <div className="service-links">
-                        {nagpurServices.map((service, index) => (
-                          <Link
-                            key={index}
-                            to={
-                              service === "Office Housekeeping Services"
-                                ? "/office-housekeeping/nagpur"
-                                : service === "Hotel Housekeeping Service"
-                                  ? "/hotel-housekeeping/nagpur"
-                                  : service === "Hospital Housekeeping Services"
-                                    ? "/hospital-housekeeping/nagpur"
-                                    : service === "Salon Housekeeping Services"
-                                      ? "/salon-housekeeping/nagpur"
-                                      : service === "Bank Housekeeping Services"
-                                        ? "/bank-housekeeping/nagpur"
-                                        : service === "Guesthouse Housekeeping Services"
-                                          ? "/guesthouse-housekeeping/nagpur"
-                                          : service === "Mall Housekeeping Services"
-                                            ? "/mall-housekeeping/nagpur"
-                                            : service === "Gym Cleaning Services"
-                                              ? "/gym-cleaning/nagpur"
-                                              : service === "School Housekeeping Services"
-                                                ? "/school-housekeeping/nagpur"
-                                                : service === "College Housekeeping Services"
-                                                  ? "/college-housekeeping/nagpur"
-                                                  : service === "Security Guard Services"
-                                                    ? "/security-guard-services/nagpur"
-                                                    : service === "Housekeeping Manpower"
-                                                      ? "/housekeeping-manpower/nagpur"
-                                                      : service === "Home Cleaning Services"
-                                                        ? "/home-cleaning/nagpur"
-                                                        : service === "Sofa Cleaning Services"
-                                                          ? "/sofa-cleaning/nagpur"
-                                                          : service === "Deep Cleaning Services"
-                                                            ? "/deep-cleaning/nagpur"
-                                                            : service === "Carpet Cleaning Services"
-                                                              ? "/carpet-cleaning/nagpur"
-                                                              : service === "Chair Cleaning Services"
-                                                                ? "/chair-cleaning/nagpur"
-                                                                : service === "Building Cleaning Services"
-                                                                  ? "/building-cleaning/nagpur"
-                                                                  : service === "Floor Cleaning Services"
-                                                                    ? "/floor-cleaning/nagpur"
-                                                                    : service === "Tiles Cleaning Services"
-                                                                      ? "/tiles-cleaning/nagpur"
-                                                                      : service === "Office Boy Services"
-                                                                        ? "/office-boy-services/nagpur"
-                                                                        : `/services/nagpur/${createSlug(service)}`
-                            }
-                            className="dropdown-link"
-                            onClick={handleLinkClick}
-                          >
-                            {service}
-                          </Link>
-                        ))}
+                  {isMobile ? (
+                    // Mobile: Nested dropdown (Cities first, then services)
+                    <div className="mobile-city-menu">
+                      <div className="city-item">
+                        <div 
+                          className={`city-header ${activeCityDropdown === 'nagpur' ? 'active' : ''}`}
+                          onClick={() => handleCityClick('nagpur')}
+                        >
+                          <span>Nagpur</span>
+                          <span className="city-arrow">{activeCityDropdown === 'nagpur' ? '▼' : '▶'}</span>
+                        </div>
+                        {activeCityDropdown === 'nagpur' && (
+                          <div className="city-services">
+                            {nagpurServices.map((service, index) => (
+                              <Link
+                                key={index}
+                                to={getServiceUrl(service, 'nagpur')}
+                                className="dropdown-link"
+                                onClick={handleLinkClick}
+                              >
+                                {service}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
-                    </div>
 
-                    <div className="mega-menu-column">
-                      <h4>Jabalpur</h4>
-                      <div className="service-links">
-                        {jabalpurServices.map((service, index) => (
-                          <Link
-                            key={index}
-                            to={
-                              service === "Housekeeping And Cleaning"
-                                ? "/housekeeping-and-cleaning/jabalpur"
-                                : service === "Office Housekeeping Services"
-                                  ? "/office-housekeeping/jabalpur"
-                                  : service === "Hotel Housekeeping Service"
-                                    ? "/hotel-housekeeping/jabalpur"
-                                    : service === "Hospital Housekeeping Services"
-                                      ? "/hospital-housekeeping/jabalpur"
-                                      : service === "Salon Housekeeping Services"
-                                        ? "/salon-housekeeping/jabalpur"
-                                        : service === "Bank Housekeeping Services"
-                                          ? "/bank-housekeeping-jabalpur"
-                                          : service === "Guesthouse Housekeeping Services"
-                                            ? "/guesthouse-housekeeping-jabalpur"
-                                            : service === "Mall Housekeeping Services"
-                                              ? "/mall-housekeeping/jabalpur"
-                                              : service === "Gym Cleaning Services"
-                                                ? "/gym-cleaning/jabalpur"
-                                                : service === "School Housekeeping Services"
-                                                  ? "/school-housekeeping/jabalpur"
-                                                  : service === "College Housekeeping Services"
-                                                    ? "/college-housekeeping/jabalpur"
-                                                    : service === "Security Guard Services"
-                                                      ? "/security-guard-services/jabalpur"
-                                                      : service === "Housekeeping Manpower Supply"
-                                                        ? "/housekeeping-manpower-jabalpur"
-                                                        : service === "Home Cleaning Services"
-                                                          ? "/home-cleaning-jabalpur"
-                                                          : service === "Sofa Cleaning Services"
-                                                            ? "/sofa-cleaning-jabalpur"
-                                                            : service === "Carpet Cleaning Services"
-                                                              ? "/carpet-cleaning-jabalpur"
-                                                              : service === "Deep Cleaning Services"
-                                                                ? "/deep-cleaning/jabalpur"
-                                                                : service === "Office Chair Cleaning Services"
-                                                                  ? "/office-chair-cleaning/jabalpur"
-                                                                  : service === "Office Boy Services"
-                                                                    ? "/office-boy-services-jabalpur"
-                                                                    : `/services/jabalpur/${createSlug(service)}`
-                            }
-                            className="dropdown-link"
-                            onClick={handleLinkClick}
-                          >
-                            {service}
-                          </Link>
-                        ))}
+                      <div className="city-item">
+                        <div 
+                          className={`city-header ${activeCityDropdown === 'jabalpur' ? 'active' : ''}`}
+                          onClick={() => handleCityClick('jabalpur')}
+                        >
+                          <span>Jabalpur</span>
+                          <span className="city-arrow">{activeCityDropdown === 'jabalpur' ? '▼' : '▶'}</span>
+                        </div>
+                        {activeCityDropdown === 'jabalpur' && (
+                          <div className="city-services">
+                            {jabalpurServices.map((service, index) => (
+                              <Link
+                                key={index}
+                                to={getServiceUrl(service, 'jabalpur')}
+                                className="dropdown-link"
+                                onClick={handleLinkClick}
+                              >
+                                {service}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
-                  </div>
+                  ) : (
+                    // Desktop: Side-by-side columns
+                    <div className="mega-menu-content">
+                      <div className="mega-menu-column">
+                        <h4>Nagpur</h4>
+                        <div className="service-links">
+                          {nagpurServices.map((service, index) => (
+                            <Link
+                              key={index}
+                              to={getServiceUrl(service, 'nagpur')}
+                              className="dropdown-link"
+                              onClick={handleLinkClick}
+                            >
+                              {service}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="mega-menu-column">
+                        <h4>Jabalpur</h4>
+                        <div className="service-links">
+                          {jabalpurServices.map((service, index) => (
+                            <Link
+                              key={index}
+                              to={getServiceUrl(service, 'jabalpur')}
+                              className="dropdown-link"
+                              onClick={handleLinkClick}
+                            >
+                              {service}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -276,11 +241,17 @@ const Header = () => {
               </Link>
             </nav>
 
-            <button className="menu-toggle" onClick={toggleMenu}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+            <div className="header-right">
+              <a href="tel:+919028907874" className="call-button" title="Call: +91 9028907874">
+                <FaPhone />
+              </a>
+
+              <button className="menu-toggle" onClick={handleToggleMenu}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
         </div>
       </header>

@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  updateFormField,
+  setCaptchaInput,
+  setCaptchaCode,
+  resetForm,
+  setSubmitting,
+  setSubmitSuccess,
+} from '../store/slices/enquirySlice';
 import './EnquiryModal.css';
 
 const EnquiryModal = ({ isOpen, onClose }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    enquiry: ''
-  });
-  const [captchaInput, setCaptchaInput] = useState('');
-  const [captchaCode, setCaptchaCode] = useState('');
+  const dispatch = useDispatch();
+  const { formData, captchaInput, captchaCode, isSubmitting } = useSelector(
+    (state) => state.enquiry
+  );
 
   // Generate random alphanumeric captcha
   const generateCaptcha = () => {
@@ -18,26 +23,28 @@ const EnquiryModal = ({ isOpen, onClose }) => {
     for (let i = 0; i < 6; i++) {
       code += chars.charAt(Math.floor(Math.random() * chars.length));
     }
-    setCaptchaCode(code);
-    setCaptchaInput('');
+    dispatch(setCaptchaCode(code));
+    dispatch(setCaptchaInput(''));
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isOpen) {
       generateCaptcha();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    dispatch(updateFormField({ field: e.target.name, value: e.target.value }));
+  };
+
+  const handleCaptchaChange = (e) => {
+    dispatch(setCaptchaInput(e.target.value));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Validate captcha
     if (captchaInput !== captchaCode) {
       alert('Captcha does not match. Please try again.');
@@ -51,14 +58,16 @@ const EnquiryModal = ({ isOpen, onClose }) => {
       return;
     }
 
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
-    alert('Thank you for your enquiry! We will contact you soon.');
-    
-    // Reset form and close modal
-    setFormData({ name: '', phone: '', email: '', enquiry: '' });
-    setCaptchaInput('');
-    onClose();
+    dispatch(setSubmitting(true));
+
+    // Simulate API call
+    setTimeout(() => {
+      console.log('Form submitted:', formData);
+      alert('Thank you for your enquiry! We will contact you soon.');
+      dispatch(setSubmitSuccess(true));
+      dispatch(resetForm());
+      onClose();
+    }, 500);
   };
 
   const handleOverlayClick = (e) => {
@@ -76,7 +85,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           <h2>Request a Call</h2>
           <button className="close-btn" onClick={onClose}>×</button>
         </div>
-        
+
         <form onSubmit={handleSubmit} className="enquiry-form">
           <div className="form-group">
             <label htmlFor="name">Name *</label>
@@ -135,9 +144,9 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             <div className="captcha-container">
               <div className="captcha-display">
                 <span className="captcha-code">{captchaCode}</span>
-                <button 
-                  type="button" 
-                  className="captcha-refresh" 
+                <button
+                  type="button"
+                  className="captcha-refresh"
                   onClick={generateCaptcha}
                   title="Refresh Captcha"
                 >
@@ -148,7 +157,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
                 type="text"
                 id="captcha"
                 value={captchaInput}
-                onChange={(e) => setCaptchaInput(e.target.value)}
+                onChange={handleCaptchaChange}
                 placeholder="Enter the code above"
                 required
               />
@@ -159,8 +168,8 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             <button type="button" className="cancel-btn" onClick={onClose}>
               Cancel
             </button>
-            <button type="submit" className="submit-btn">
-              Submit Enquiry
+            <button type="submit" className="submit-btn" disabled={isSubmitting}>
+              {isSubmitting ? 'Submitting...' : 'Submit Enquiry'}
             </button>
           </div>
         </form>
