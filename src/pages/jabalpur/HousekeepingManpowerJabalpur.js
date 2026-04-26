@@ -22,7 +22,7 @@ const HousekeepingManpowerJabalpur = () => {
                     bottom: 0,
                     background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
-                <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
+                <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'var(--dark)' }}>
                     <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Housekeeping Manpower Supply</h1>
                     <p style={{ fontSize: '1.3rem' }}>Quality Housekeeping Services in Jabalpur</p>
                 </div>
@@ -151,11 +151,11 @@ const HousekeepingManpowerJabalpur = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
-                color: 'white'
+                background: 'transparent',
+                color: 'var(--dark)'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--dark)' }}>
                         Ready to Build Your Professional Team?
                     </h2>
                     <p style={{
@@ -169,9 +169,7 @@ const HousekeepingManpowerJabalpur = () => {
                         Contact us today for professional housekeeping manpower supply in Jabalpur!
                     </p>
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="/quote" className="btn btn-large" style={{
-                            backgroundColor: 'white',
-                            color: '#1976D2',
+                        <a href="/quote" className="btn btn-primary btn-large" style={{
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',
@@ -179,10 +177,7 @@ const HousekeepingManpowerJabalpur = () => {
                         }}>
                             Get Free Quote
                         </a>
-                        <a href="tel:+91-9028907874" className="btn btn-large btn-secondary" style={{
-                            backgroundColor: 'transparent',
-                            color: 'white',
-                            border: '2px solid white',
+                        <a href="tel:+91-9028907874" className="btn btn-secondary btn-large" style={{
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',
