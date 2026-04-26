@@ -1,0 +1,231 @@
+/* ====================================================
+   ENQUIRY MODAL CSS
+   Theme: #1A8FE3 Blue | #2DC98E Green | #FFC300 Yellow
+         #F0F9FF Surface | #0C1F35 Navy
+   ==================================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 31, 53, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: overlayIn 0.3s ease;
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 32px 80px rgba(12, 31, 53, 0.32);
+  animation: modalSlideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(26, 143, 227, 0.12);
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-content::-webkit-scrollbar { width: 4px; }
+.modal-content::-webkit-scrollbar-track { background: #F0F9FF; }
+.modal-content::-webkit-scrollbar-thumb { background: #5BB8F5; border-radius: 2px; }
+
+/* ── Modal Header — Primary Blue ────────────────────── */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.75rem 1.25rem;
+  border-bottom: 1px solid #C5DFF0;
+  background: linear-gradient(135deg, #1A8FE3 0%, #0E72C0 100%);
+  border-radius: 20px 20px 0 0;
+}
+
+.modal-header h2 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.close-btn {
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.30);
+  transform: scale(1.1);
+}
+
+/* ── Enquiry Form ───────────────────────────────────── */
+.enquiry-form {
+  padding: 1.5rem 1.75rem;
+}
+
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #2C5282;
+  letter-spacing: 0.02em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #C5DFF0;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  color: #0C1F35;
+  background: #F0F9FF;
+  transition: all 0.22s ease;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #1A8FE3;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(26, 143, 227, 0.14);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6B9BB8;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* ── Captcha ────────────────────────────────────────── */
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.captcha-display {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #F0F9FF, #E6F4FF);
+  border: 1.5px dashed #5BB8F5;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.captcha-code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: #1A8FE3;
+  user-select: none;
+  flex: 1;
+}
+
+.captcha-refresh {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.captcha-refresh:hover { transform: rotate(180deg); }
+
+/* ── Form Actions ───────────────────────────────────── */
+.form-actions {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.cancel-btn {
+  padding: 0.8rem;
+  border: 1.5px solid #C5DFF0;
+  border-radius: 10px;
+  background: transparent;
+  color: #6B9BB8;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.cancel-btn:hover {
+  background: #F0F9FF;
+  border-color: #5BB8F5;
+  color: #2C5282;
+}
+
+/* Submit — Eco Green gradient */
+.submit-btn {
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #2DC98E 0%, #1FAD76 100%);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(45, 201, 142, 0.32);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(45, 201, 142, 0.45);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .modal-content { border-radius: 16px; }
+  .modal-header  { padding: 1.25rem 1.5rem 1rem; border-radius: 16px 16px 0 0; }
+  .enquiry-form  { padding: 1.25rem 1.5rem; }
+  .form-actions  { grid-template-columns: 1fr; }
+}

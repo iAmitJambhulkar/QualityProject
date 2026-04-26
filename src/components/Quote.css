@@ -1,0 +1,318 @@
+/* ====================================================
+   QUOTE.CSS — Premium Quote Request Page
+   Theme: #1A8FE3 Blue | #2DC98E Green | #FFC300 Yellow
+         #F0F9FF Surface | #0C1F35 Navy
+   ==================================================== */
+
+.quote-page {
+  min-height: 100vh;
+  background: #F0F9FF;
+}
+
+/* ── Quote Hero — Deep Navy → Sky Blue ─────────────── */
+.quote-hero {
+  background: linear-gradient(160deg, #0C1F35 0%, #0E3A5E 40%, #1A8FE3 100%);
+  padding: 80px 0 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 65% 55% at 65% 55%, rgba(45, 201, 142, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 25% 35%, rgba(255, 195, 0, 0.10) 0%, transparent 55%);
+}
+
+.quote-hero .container { position: relative; z-index: 1; }
+
+.quote-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.quote-hero p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.1rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Quote Content ──────────────────────────────────── */
+.quote-content {
+  padding: 3rem 0 5rem;
+}
+
+.quote-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* ── Info Sidebar ───────────────────────────────────── */
+.quote-info {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 6px 30px rgba(12, 31, 53, 0.08);
+  border: 1px solid #C5DFF0;
+  position: sticky;
+  top: 90px;
+}
+
+.quote-info h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0C1F35;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  align-items: flex-start;
+}
+
+/* Info icon — alternates blue / green */
+.info-icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1A8FE3, #0E72C0);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.info-item:nth-child(2n) .info-icon {
+  background: linear-gradient(135deg, #2DC98E, #1FAD76);
+}
+
+.info-item h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0C1F35;
+  margin-bottom: 0.2rem;
+}
+
+.info-item p {
+  font-size: 0.85rem;
+  color: #6B9BB8;
+  line-height: 1.5;
+}
+
+/* ── Contact Info Box — Navy with Yellow accent ──────── */
+.contact-info-box {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #0C1F35, #173554);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.contact-info-box h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.contact-info-box p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Phone — Sunshine Yellow */
+.phone-link {
+  display: inline-block;
+  color: #FFC300;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.phone-link:hover { color: #FFD84D; transform: scale(1.04); }
+
+.timing {
+  color: rgba(255, 255, 255, 0.40) !important;
+  font-size: 0.8rem !important;
+  margin-top: 0.5rem;
+}
+
+/* ── Quote Form Container ───────────────────────────── */
+.quote-form-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(12, 31, 53, 0.10);
+  border: 1px solid #C5DFF0;
+  overflow: hidden;
+}
+
+/* Form top accent stripe — Blue + Green + Yellow */
+.quote-form-container::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, #1A8FE3, #2DC98E, #FFC300);
+}
+
+.quote-form {
+  padding: 2.25rem 2rem;
+}
+
+.quote-form h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0C1F35;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.01em;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #2C5282;
+  letter-spacing: 0.02em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid #C5DFF0;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  color: #0C1F35;
+  background: #F0F9FF;
+  transition: all 0.22s ease;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B9BB8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #1A8FE3;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(26, 143, 227, 0.13);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6B9BB8;
+}
+
+.form-group textarea {
+  height: 110px;
+  resize: vertical;
+}
+
+/* Submit Button — Sunshine Yellow (energy / CTA) */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #FFC300 0%, #E0AA00 100%);
+  border: none;
+  border-radius: 12px;
+  color: #0C1F35;
+  font-family: var(--font-display, 'Plus Jakarta Sans', sans-serif);
+  font-weight: 800;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.28s ease;
+  box-shadow: 0 6px 22px rgba(255, 195, 0, 0.35);
+  margin-top: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(255, 195, 0, 0.48);
+  background: linear-gradient(135deg, #FFD84D 0%, #FFC300 100%);
+}
+
+/* ── Success Message ────────────────────────────────── */
+.success-message {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Success icon — Eco Green */
+.success-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2DC98E, #1FAD76);
+  color: #ffffff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 28px rgba(45, 201, 142, 0.38);
+}
+
+.success-message h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0C1F35;
+  margin-bottom: 0.75rem;
+}
+
+.success-message p {
+  color: #6B9BB8;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 900px) {
+  .quote-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .quote-info { position: static; }
+}
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+  .quote-form { padding: 1.5rem; }
+  .quote-hero { padding: 60px 0 50px; }
+}

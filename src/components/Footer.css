@@ -1,0 +1,198 @@
+/* ====================================================
+   FOOTER.CSS — Premium dark navy footer
+   ==================================================== */
+
+.footer {
+  background: #0C1F35;
+  color: rgba(255,255,255,0.82);
+  padding: 60px 0 24px;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1A8FE3, #2DC98E, #FFC300, #1A8FE3);
+  background-size: 200% 100%;
+  animation: gradientSlide 5s linear infinite;
+}
+
+@keyframes gradientSlide {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+.footer * { box-sizing: border-box; }
+.footer .container { position: relative; z-index: 1; }
+
+/* ── Quick Links ────────────────────────────────────── */
+.footer-links-section {
+  text-align: center;
+  padding: 0 0 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-links-section h4 {
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin-bottom: 1.25rem;
+  opacity: 0.55;
+}
+
+.quick-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links-list li a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.quick-links-list li a:hover {
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+}
+
+/* ── Offices ────────────────────────────────────────── */
+.offices-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.offices-section h4 {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.offices-horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.office-info-horizontal {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 1.5rem;
+  border-left: 3px solid #1A8FE3;
+  transition: all 0.25s ease;
+}
+
+.office-info-horizontal:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.14);
+}
+
+.office-info-horizontal h5 {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.office-info-horizontal p {
+  color: rgba(255,255,255,0.58);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.office-info-horizontal p:last-child { margin-bottom: 0; }
+
+/* ── Social Links ───────────────────────────────────── */
+.social-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social-section h4 {
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin-bottom: 1.25rem;
+  opacity: 0.55;
+}
+
+.social-links-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.social-links-centered .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.social-links-centered .social-link:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.14);
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.22);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ── Footer Bottom ──────────────────────────────────── */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255,255,255,0.38);
+  font-size: 0.84rem;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* ── Mobile ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .footer { padding: 40px 0 20px; }
+  .offices-horizontal { grid-template-columns: 1fr; gap: 1rem; }
+  .office-info-horizontal { padding: 1.25rem; }
+  .quick-links-list { gap: 0.25rem; }
+  .social-links-centered { gap: 0.6rem; }
+}

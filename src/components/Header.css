@@ -1,0 +1,420 @@
+/* ====================================================
+   HEADER.CSS — Glassmorphism sticky navigation
+   ==================================================== */
+
+/* ── Backdrop ───────────────────────────────────────── */
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 27, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Header Shell ───────────────────────────────────── */
+.header {
+  background: rgba(12, 31, 53, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(26,143,227,0.15);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(12, 31, 53, 0.99);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.36);
+  border-bottom-color: rgba(26,143,227,0.22);
+}
+
+/* ── Container & Nav Wrapper ────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0.85rem 0;
+  gap: 2rem;
+}
+
+/* ── Logo ───────────────────────────────────────────── */
+.logo {
+  text-decoration: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.logo:hover { opacity: 0.88; transform: scale(1.02); }
+.logo img   { height: 56px; object-fit: contain; }
+
+/* ── Nav Links ──────────────────────────────────────── */
+.nav {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(255,255,255,0.82);
+  font-family: var(--font-display, 'Plus Jakarta Sans', sans-serif);
+  font-weight: 500;
+  font-size: 0.88rem;
+  transition: all 0.25s ease;
+  position: relative;
+  white-space: nowrap;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0.7rem;
+  right: 0.7rem;
+  height: 2px;
+  background: var(--primary, #1A8FE3);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after { transform: scaleX(1); }
+
+/* ── Header Right (Call + Hamburger) ────────────────── */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-self: end;
+}
+
+/* ── Call Button ────────────────────────────────────── */
+.call-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #FFB830, #FF8C00);
+  color: #0C1F35;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(255,184,48,0.4);
+  flex-shrink: 0;
+}
+
+.call-button:hover {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 6px 20px rgba(255,184,48,0.55);
+  color: #0C1F35;
+}
+
+.call-button svg {
+  font-size: 1rem;
+  animation: ring 3s ease-in-out infinite;
+}
+
+@keyframes ring {
+  0%,80%,100% { transform: rotate(0deg); }
+  10%,30%     { transform: rotate(-12deg); }
+  20%,40%     { transform: rotate(12deg); }
+}
+
+/* ── Hamburger Toggle ───────────────────────────────── */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1002;
+  flex-shrink: 0;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 2.5px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* ── Dropdown System ────────────────────────────────── */
+.dropdown { position: relative; }
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.dropdown-toggle::after {
+  content: '▾';
+  font-size: 0.75rem;
+  opacity: 0.7;
+  transition: transform 0.25s ease;
+}
+
+.dropdown.active .dropdown-toggle::after,
+.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* ── Mega Menu ──────────────────────────────────────── */
+.mega-dropdown { position: relative; }
+
+.mega-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(13,27,42,0.18);
+  border: 1px solid rgba(13,27,42,0.08);
+  width: 660px;
+  max-width: calc(100vw - 2rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  z-index: 2000;
+  max-height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mega-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.mega-menu-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.mega-menu-column {
+  padding: 0.75rem;
+  border-right: 1px solid #F0F6FF;
+}
+.mega-menu-column:last-child { border-right: none; }
+
+.mega-menu-column h4 {
+  color: var(--primary, #1A8FE3);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(10,110,255,0.15);
+}
+
+.service-links { display: flex; flex-direction: column; gap: 2px; }
+
+.service-links .dropdown-link {
+  display: block;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.82rem;
+  color: #3A5068;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.18s ease;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.service-links .dropdown-link:hover {
+  background: rgba(10,110,255,0.08);
+  color: var(--primary, #1A8FE3);
+  padding-left: 1rem;
+}
+
+/* ── Mobile Styles ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .nav { gap: 0; padding-right: 0.5rem; }
+  .nav-link { font-size: 0.83rem; padding: 0.45rem 0.55rem; }
+  .logo img { height: 48px; }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 80px 0 1rem 0;
+    transition: left 0.35s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.18);
+    overflow-y: auto;
+    gap: 0;
+    z-index: 1001;
+  }
+
+  .nav-open { left: 0; }
+
+  .nav-link {
+    font-size: 0.95rem;
+    padding: 0.9rem 1.5rem;
+    color: #0C1F35;
+    border-bottom: 1px solid #F0F6FF;
+    border-radius: 0;
+    font-weight: 600;
+  }
+
+  .nav-link:hover, .nav-link:active {
+    background: rgba(10,110,255,0.06);
+    color: #1A8FE3;
+    padding-left: 2rem;
+  }
+
+  .nav-link::after { display: none; }
+
+  .dropdown, .mega-dropdown { width: 100%; }
+  .dropdown-toggle { width: 100%; display: block; padding-right: 3rem; position: relative; }
+  .dropdown-toggle::after { position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; }
+  .dropdown.active .dropdown-toggle::after { transform: translateY(-50%) rotate(180deg); }
+  .dropdown.active .dropdown-toggle { background: rgba(26,143,227,0.06); color: #1A8FE3; }
+
+  .mega-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    background: #FAFBFF;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+
+  .mega-menu.show {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  .mega-menu-content { grid-template-columns: 1fr; padding: 0; }
+  .mega-menu-column { padding: 0.5rem 0; border-right: none; }
+  .mega-menu-column h4 {
+    font-size: 0.72rem;
+    padding: 0.5rem 1.5rem;
+    background: rgba(10,110,255,0.08);
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .service-links { gap: 0; }
+  .service-links .dropdown-link {
+    padding: 0.65rem 2rem;
+    white-space: normal;
+    font-size: 0.85rem;
+    border-radius: 0;
+    border-bottom: 1px solid #F0F6FF;
+    color: #3A5068;
+  }
+  .service-links .dropdown-link:hover { background: rgba(10,110,255,0.05); padding-left: 2.5rem; }
+
+  .logo img { height: 46px; }
+  .nav-wrapper { gap: 0.5rem; }
+
+  /* Mobile city menu */
+  .mobile-city-menu { display: flex; flex-direction: column; width: 100%; }
+  .city-item { width: 100%; border-bottom: 1px solid #F0F6FF; }
+  .city-item:last-child { border-bottom: none; }
+  .city-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    background: #FAFBFF;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: #1A8FE3;
+    transition: background 0.2s ease;
+  }
+  .city-header:hover { background: rgba(10,110,255,0.06); }
+  .city-header.active { background: rgba(10,110,255,0.10); }
+  .city-arrow { font-size: 0.75rem; transition: transform 0.25s ease; }
+  .city-services {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    animation: slideDown 0.25s ease;
+  }
+  @keyframes slideDown {
+    from { opacity: 0; max-height: 0; }
+    to   { opacity: 1; max-height: 1000px; }
+  }
+  .city-services .dropdown-link { padding: 0.65rem 2rem; border-bottom: 1px solid #F0F6FF; }
+  .city-services .dropdown-link:last-child { border-bottom: none; }
+}
+
+@media (max-width: 480px) {
+  .nav { width: 85%; max-width: 300px; }
+  .logo img { height: 40px; }
+  .call-button { width: 38px; height: 38px; }
+}
+
+/* Desktop scrollbar on mega menu */
+.mega-menu::-webkit-scrollbar { width: 5px; }
+.mega-menu::-webkit-scrollbar-track { background: #f5f8ff; }
+.mega-menu::-webkit-scrollbar-thumb { background: #c0d4ff; border-radius: 4px; }
+
+/* Mobile nav scrollbar */
+.nav::-webkit-scrollbar { width: 4px; }
+.nav::-webkit-scrollbar-track { background: #f5f5f5; }
+.nav::-webkit-scrollbar-thumb { background: #d0d0d0; border-radius: 2px; }

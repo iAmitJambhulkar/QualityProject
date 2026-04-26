@@ -1,0 +1,47 @@
+{
+  "name": "quality-housekeeping-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "prebuild": "node scripts/optimize-build.js",
+    "build": "craco build --config config/craco.config.js",
+    "postbuild": "node scripts/verify-build.js",
+    "build:analyze": "npm run build && npx source-map-explorer 'build/static/js/*.js'",
+    "build:prod": "npm run build",
+    "serve": "npx serve -s build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "compression-webpack-plugin": "^11.1.0"
+  }
+}
