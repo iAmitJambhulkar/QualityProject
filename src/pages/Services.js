@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaBuilding, FaHome, FaIndustry, FaTools, FaPhone, FaCheck } from 'react-icons/fa';
+import { FaSparkles } from 'react-icons/fa6';
 
 const services = [
-  { title: 'Office Housekeeping', desc: 'Professional office cleaning to maintain a clean, healthy, and productive workspace.', features: ['Common areas cleaning', 'Floor & carpet maintenance', 'Washroom sanitization', 'Window & glass cleaning'], link: '/office-housekeeping/nagpur', icon: '🏢' },
-  { title: 'Residential Cleaning', desc: 'Complete home cleaning services including all rooms, kitchen, and bathrooms.', features: ['Regular cleaning', 'Deep cleaning', 'Move-in/out cleaning', 'Post-construction cleanup'], icon: '🏠' },
-  { title: 'Commercial Cleaning', desc: 'Professional office and commercial space cleaning services.', features: ['Daily office cleaning', 'Retail space cleaning', 'Medical facility cleaning', 'Industrial cleaning'], icon: '🏗️' },
-  { title: 'Specialized Services', desc: 'Specialized cleaning services for specific needs and requirements.', features: ['Carpet cleaning', 'Window cleaning', 'Upholstery cleaning', 'Floor polishing'], icon: '✨' },
-  { title: 'Maintenance Services', desc: 'Regular maintenance and upkeep services for properties.', features: ['Gardening services', 'Plumbing maintenance', 'Electrical maintenance', 'General repairs'], icon: '🔧' },
+  { title: 'Office Housekeeping', desc: 'Professional office cleaning to maintain a clean, healthy, and productive workspace.', features: ['Common areas cleaning', 'Floor & carpet maintenance', 'Washroom sanitization', 'Window & glass cleaning'], link: '/office-housekeeping/nagpur', icon: <FaBuilding /> },
+  { title: 'Residential Cleaning', desc: 'Complete home cleaning services including all rooms, kitchen, and bathrooms.', features: ['Regular cleaning', 'Deep cleaning', 'Move-in/out cleaning', 'Post-construction cleanup'], icon: <FaHome /> },
+  { title: 'Commercial Cleaning', desc: 'Professional office and commercial space cleaning services.', features: ['Daily office cleaning', 'Retail space cleaning', 'Medical facility cleaning', 'Industrial cleaning'], icon: <FaIndustry /> },
+  { title: 'Specialized Services', desc: 'Specialized cleaning services for specific needs and requirements.', features: ['Carpet cleaning', 'Window cleaning', 'Upholstery cleaning', 'Floor polishing'], icon: <FaSparkles /> },
+  { title: 'Maintenance Services', desc: 'Regular maintenance and upkeep services for properties.', features: ['Gardening services', 'Plumbing maintenance', 'Electrical maintenance', 'General repairs'], icon: <FaTools /> },
 ];
 
 const processSteps = [
@@ -42,7 +44,7 @@ const Services = () => {
                   <ul style={{ listStyle: 'none', padding: 0 }}>
                     {svc.features.map((f, fi) => (
                       <li key={fi} style={{ marginBottom: '0.45rem', color: '#7A8FA6', paddingLeft: '1.4rem', position: 'relative', fontSize: '0.9rem' }}>
-                        <span style={{ position: 'absolute', left: 0, color: '#2DC98E', fontWeight: 700 }}>✓</span>
+                        <span style={{ position: 'absolute', left: 0, color: '#2DC98E', fontWeight: 700 }}><FaCheck /></span>
                         {f}
                       </li>
                     ))}
@@ -57,7 +59,7 @@ const Services = () => {
                   <ul style={{ listStyle: 'none', padding: 0 }}>
                     {svc.features.map((f, fi) => (
                       <li key={fi} style={{ marginBottom: '0.45rem', color: '#7A8FA6', paddingLeft: '1.4rem', position: 'relative', fontSize: '0.9rem' }}>
-                        <span style={{ position: 'absolute', left: 0, color: '#2DC98E', fontWeight: 700 }}>✓</span>
+                        <span style={{ position: 'absolute', left: 0, color: '#2DC98E', fontWeight: 700 }}><FaCheck /></span>
                         {f}
                       </li>
                     ))}
@@ -97,7 +99,7 @@ const Services = () => {
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/quote" className="btn btn-accent btn-large">Get Free Quote</Link>
-            <a href="tel:+919028907874" className="btn btn-ghost btn-large">📞 Call Now</a>
+            <a href="tel:+919028907874" className="btn btn-ghost btn-large"><FaPhone /> Call Now</a>
           </div>
         </div>
       </section>

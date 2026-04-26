@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { 
+  FaLeaf, FaTrophy, FaGraduationCap, FaSyncAlt, FaClock, FaBox,
+  FaBuilding, FaHotel, FaHospital, FaHome, FaCouch, FaBroom,
+  FaSchool, FaShieldAlt, FaChair, FaStar, FaRocket, FaPhone,
+  FaCheck, FaSmile, FaMapMarkerAlt, FaEye, FaClipboardList,
+  FaDollarSign
+} from 'react-icons/fa';
 
 /* ── Animated Stats Counter ──────────────────────────── */
 const useCountUp = (target, duration = 2000, isVisible) => {
@@ -31,25 +38,25 @@ const StatCard = ({ icon, value, suffix, label, isVisible }) => {
 
 /* ── Why Choose Us Data ──────────────────────────── */
 const whyFeatures = [
-  { icon: '🌿', color: 'green', title: 'Eco-Friendly Products', desc: 'We use natural, pet-safe, non-toxic chemicals that protect your family and the environment.' },
-  { icon: '🏆', color: 'blue', title: 'ISO 9001-2015 Certified', desc: 'Our quality management system is internationally certified, ensuring world-class service standards.' },
-  { icon: '🎓', color: 'blue', title: 'Trained Professionals', desc: 'Our staff undergoes intensive training in hygiene, etiquettes, and modern cleaning technology.' },
-  { icon: '🔄', color: 'green', title: 'Guaranteed Replacement', desc: 'We manage employees and offer guaranteed replacements to ensure uninterrupted service.' },
-  { icon: '⏰', color: 'yellow', title: 'Punctual & Reliable', desc: 'We are never late. Once you give instructions, rest assured everything will exceed expectations.' },
-  { icon: '📦', color: 'yellow', title: 'Supplies Included', desc: 'We bring all cleaning materials and modern equipment — no arranging hassles for you.' },
+  { icon: <FaLeaf />, color: 'green', title: 'Eco-Friendly Products', desc: 'We use natural, pet-safe, non-toxic chemicals that protect your family and the environment.' },
+  { icon: <FaTrophy />, color: 'blue', title: 'ISO 9001-2015 Certified', desc: 'Our quality management system is internationally certified, ensuring world-class service standards.' },
+  { icon: <FaGraduationCap />, color: 'blue', title: 'Trained Professionals', desc: 'Our staff undergoes intensive training in hygiene, etiquettes, and modern cleaning technology.' },
+  { icon: <FaSyncAlt />, color: 'green', title: 'Guaranteed Replacement', desc: 'We manage employees and offer guaranteed replacements to ensure uninterrupted service.' },
+  { icon: <FaClock />, color: 'yellow', title: 'Punctual & Reliable', desc: 'We are never late. Once you give instructions, rest assured everything will exceed expectations.' },
+  { icon: <FaBox />, color: 'yellow', title: 'Supplies Included', desc: 'We bring all cleaning materials and modern equipment — no arranging hassles for you.' },
 ];
 
 /* ── Services Quick Links ────────────────────────────── */
 const quickServices = [
-  { icon: '🏢', title: 'Office Housekeeping', link: '/office-housekeeping/nagpur' },
-  { icon: '🏨', title: 'Hotel Housekeeping', link: '/hotel-housekeeping/nagpur' },
-  { icon: '🏥', title: 'Hospital Housekeeping', link: '/hospital-housekeeping/nagpur' },
-  { icon: '🏠', title: 'Home Cleaning', link: '/home-cleaning/nagpur' },
-  { icon: '🛋️', title: 'Sofa Cleaning', link: '/sofa-cleaning/nagpur' },
-  { icon: '🧹', title: 'Deep Cleaning', link: '/deep-cleaning/nagpur' },
-  { icon: '🏫', title: 'School Housekeeping', link: '/school-housekeeping/nagpur' },
-  { icon: '🛡️', title: 'Security Guard Services', link: '/security-guard-services/nagpur' },
-  { icon: '🪑', title: 'Chair Cleaning', link: '/chair-cleaning/nagpur' },
+  { icon: <FaBuilding />, title: 'Office Housekeeping', link: '/office-housekeeping/nagpur' },
+  { icon: <FaHotel />, title: 'Hotel Housekeeping', link: '/hotel-housekeeping/nagpur' },
+  { icon: <FaHospital />, title: 'Hospital Housekeeping', link: '/hospital-housekeeping/nagpur' },
+  { icon: <FaHome />, title: 'Home Cleaning', link: '/home-cleaning/nagpur' },
+  { icon: <FaCouch />, title: 'Sofa Cleaning', link: '/sofa-cleaning/nagpur' },
+  { icon: <FaBroom />, title: 'Deep Cleaning', link: '/deep-cleaning/nagpur' },
+  { icon: <FaSchool />, title: 'School Housekeeping', link: '/school-housekeeping/nagpur' },
+  { icon: <FaShieldAlt />, title: 'Security Guard Services', link: '/security-guard-services/nagpur' },
+  { icon: <FaChair />, title: 'Chair Cleaning', link: '/chair-cleaning/nagpur' },
 ];
 
 const Home = () => {
@@ -91,7 +98,7 @@ const Home = () => {
 
         <div className="container hero-content">
           <div className="hero-eyebrow">
-            <span>⭐</span>
+            <FaStar />
             ISO 9001-2015 Certified Company
           </div>
 
@@ -103,18 +110,18 @@ const Home = () => {
 
           <div className="hero-buttons">
             <Link to="/quote" className="btn btn-accent btn-large">
-              🚀 Get Free Quote
+              <FaRocket /> Get Free Quote
             </Link>
             <a href="tel:+919028907874" className="btn btn-ghost btn-large">
-              📞 Call Now
+              <FaPhone /> Call Now
             </a>
           </div>
 
           <div className="hero-trust-row">
-            <div className="hero-trust-item"><span className="check">✓</span> Eco-Friendly</div>
-            <div className="hero-trust-item"><span className="check">✓</span> Trained Staff</div>
-            <div className="hero-trust-item"><span className="check">✓</span> 8+ Years Experience</div>
-            <div className="hero-trust-item"><span className="check">✓</span> 3 Cities Served</div>
+            <div className="hero-trust-item"><span className="check"><FaCheck /></span> Eco-Friendly</div>
+            <div className="hero-trust-item"><span className="check"><FaCheck /></span> Trained Staff</div>
+            <div className="hero-trust-item"><span className="check"><FaCheck /></span> 8+ Years Experience</div>
+            <div className="hero-trust-item"><span className="check"><FaCheck /></span> 3 Cities Served</div>
           </div>
         </div>
 
@@ -130,10 +137,10 @@ const Home = () => {
       <section className="stats-section" ref={statsRef}>
         <div className="container">
           <div className="stats-inner">
-            <StatCard icon="🏆" value={8} suffix="+" label="Years Experience" isVisible={statsVisible} />
-            <StatCard icon="😊" value={500} suffix="+" label="Happy Clients" isVisible={statsVisible} />
-            <StatCard icon="🧹" value={20} suffix="+" label="Services Offered" isVisible={statsVisible} />
-            <StatCard icon="📍" value={3} suffix="" label="Cities Served" isVisible={statsVisible} />
+            <StatCard icon={<FaTrophy />} value={8} suffix="+" label="Years Experience" isVisible={statsVisible} />
+            <StatCard icon={<FaSmile />} value={500} suffix="+" label="Happy Clients" isVisible={statsVisible} />
+            <StatCard icon={<FaBroom />} value={20} suffix="+" label="Services Offered" isVisible={statsVisible} />
+            <StatCard icon={<FaMapMarkerAlt />} value={3} suffix="" label="Cities Served" isVisible={statsVisible} />
           </div>
         </div>
       </section>
@@ -228,13 +235,13 @@ const Home = () => {
           </p>
           <div className="action-buttons">
             <button className="action-btn" onClick={handleSeeAllReviews}>
-              <span>👀</span> See All Our Reviews
+              <FaEye /> See All Our Reviews
             </button>
             <button className="action-btn" onClick={handleRateReviews}>
-              <span>⭐</span> Rate &amp; Review Us
+              <FaStar /> Rate &amp; Review Us
             </button>
             <Link to="/quote" className="action-btn" style={{ textDecoration: 'none' }}>
-              <span>📋</span> Get Free Quote
+              <FaClipboardList /> Get Free Quote
             </Link>
           </div>
         </div>
@@ -245,23 +252,23 @@ const Home = () => {
         <div className="container">
           <div className="trust-badges">
             <div className="trust-badge">
-              <div className="trust-badge-icon">🏆</div>
+              <div className="trust-badge-icon"><FaTrophy /></div>
               <span>ISO 9001-2015 Certified</span>
             </div>
             <div className="trust-badge">
-              <div className="trust-badge-icon">🌿</div>
+              <div className="trust-badge-icon"><FaLeaf /></div>
               <span>Eco-Friendly Products</span>
             </div>
             <div className="trust-badge">
-              <div className="trust-badge-icon">🛡️</div>
+              <div className="trust-badge-icon"><FaShieldAlt /></div>
               <span>Vetted &amp; Trained Staff</span>
             </div>
             <div className="trust-badge">
-              <div className="trust-badge-icon">⏰</div>
+              <div className="trust-badge-icon"><FaClock /></div>
               <span>On-Time Guarantee</span>
             </div>
             <div className="trust-badge">
-              <div className="trust-badge-icon">💰</div>
+              <div className="trust-badge-icon"><FaDollarSign /></div>
               <span>Affordable Pricing</span>
             </div>
           </div>

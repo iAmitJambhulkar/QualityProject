@@ -434,11 +434,16 @@ main {
 }
 
 .benefits-list li::before {
-  content: '✓';
+  content: '';
   position: absolute;
   left: 0;
   color: var(--secondary);
   font-weight: 700;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ── Client Reviews / Action Buttons ───────────────── */
@@ -694,12 +699,17 @@ main {
 }
 
 .qualifications-list li::before {
-  content: '✓';
+  content: '';
   position: absolute;
   left: 0;
   color: var(--secondary);
   font-weight: 700;
   font-size: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); gap: 1.75rem; }
@@ -780,3 +790,4 @@ main {
   .hero-buttons { flex-direction: column; align-items: center; }
   .btn-large { width: 100%; max-width: 300px; }
 }
+
