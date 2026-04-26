@@ -128,8 +128,8 @@ const BankHousekeeping = () => {
                 color: 'var(--dark)'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--dark)', color: 'var(--dark)' }}>
-                        Professional Bank Housekeeping Services
+                        Professional Bank Housekeeping Services                    <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--dark)'}}>
+
                     </h2>
                     <p style={{
                         fontSize: '1.2rem',
