@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBuilding, FaHome, FaIndustry, FaTools, FaPhone, FaCheck } from 'react-icons/fa';
-import { FaSparkles } from 'react-icons/fa6';
+import { FaBuilding, FaHome, FaIndustry, FaTools, FaPhone, FaCheck, FaStar } from 'react-icons/fa';
 
 const services = [
   { title: 'Office Housekeeping', desc: 'Professional office cleaning to maintain a clean, healthy, and productive workspace.', features: ['Common areas cleaning', 'Floor & carpet maintenance', 'Washroom sanitization', 'Window & glass cleaning'], link: '/office-housekeeping/nagpur', icon: <FaBuilding /> },
   { title: 'Residential Cleaning', desc: 'Complete home cleaning services including all rooms, kitchen, and bathrooms.', features: ['Regular cleaning', 'Deep cleaning', 'Move-in/out cleaning', 'Post-construction cleanup'], icon: <FaHome /> },
   { title: 'Commercial Cleaning', desc: 'Professional office and commercial space cleaning services.', features: ['Daily office cleaning', 'Retail space cleaning', 'Medical facility cleaning', 'Industrial cleaning'], icon: <FaIndustry /> },
-  { title: 'Specialized Services', desc: 'Specialized cleaning services for specific needs and requirements.', features: ['Carpet cleaning', 'Window cleaning', 'Upholstery cleaning', 'Floor polishing'], icon: <FaSparkles /> },
+  { title: 'Specialized Services', desc: 'Specialized cleaning services for specific needs and requirements.', features: ['Carpet cleaning', 'Window cleaning', 'Upholstery cleaning', 'Floor polishing'], icon: <FaStar /> },
   { title: 'Maintenance Services', desc: 'Regular maintenance and upkeep services for properties.', features: ['Gardening services', 'Plumbing maintenance', 'Electrical maintenance', 'General repairs'], icon: <FaTools /> },
 ];
 
