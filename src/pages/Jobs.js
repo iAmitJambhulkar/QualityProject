@@ -222,17 +222,17 @@ const Jobs = () => {
       )}
 
       {/* Apply CTA Section */}
-      <section style={{ padding: '80px 0', background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)', color: 'white' }}>
+      <section style={{ padding: '80px 0', background: 'transparent', color: 'var(--dark)' }}>
         <div className="container" style={{ textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Ready to Join Our Team?</h2>
-          <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '700px', margin: '0 auto 30px' }}>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--dark)' }}>Ready to Join Our Team?</h2>
+          <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '700px', margin: '0 auto 30px', color: 'var(--mid)' }}>
             Send us your resume and we'll get back to you as soon as possible
           </p>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:info@qualityhousekeepingindia.com" className="btn btn-large" style={{ backgroundColor: 'white', color: '#1976D2' }}>
+            <a href="mailto:info@qualityhousekeepingindia.com" className="btn btn-primary btn-large">
               Send Resume
             </a>
-            <a href="/contact" className="btn btn-large btn-secondary">
+            <a href="/contact" className="btn btn-secondary btn-large">
               Contact HR
             </a>
           </div>
