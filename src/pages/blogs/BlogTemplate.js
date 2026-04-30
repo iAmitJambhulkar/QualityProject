@@ -171,7 +171,6 @@ const BlogTemplate = () => {
                             <a href="/contact" className="btn btn-primary" style={{
                                 display: 'inline-block',
                                 padding: '15px 40px',
-                                /* backgroundColor removed - using theme */,
                                 color: 'white',
                                 textDecoration: 'none',
                                 borderRadius: '50px',
