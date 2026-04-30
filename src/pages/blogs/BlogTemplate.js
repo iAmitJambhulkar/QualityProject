@@ -113,7 +113,7 @@ const BlogTemplate = () => {
                     bottom: 0,
                     background: 'rgba(0, 0, 0, 0.3)', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
                 }}></div>
-                <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'white' }}>
+                <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: 'var(--dark)' }}>
                     <span style={{ 
                         display: 'inline-block',
                         backgroundColor: 'rgba(255,255,255,0.2)',
@@ -171,7 +171,7 @@ const BlogTemplate = () => {
                             <a href="/contact" className="btn btn-primary" style={{
                                 display: 'inline-block',
                                 padding: '15px 40px',
-                                backgroundColor: '#1976D2',
+                                /* backgroundColor removed - using theme */,
                                 color: 'white',
                                 textDecoration: 'none',
                                 borderRadius: '50px',
@@ -188,27 +188,21 @@ const BlogTemplate = () => {
             {/* CTA Section */}
             <section style={{
                 padding: '80px 0',
-                background: 'linear-gradient(135deg, #1976D2 0%, #1565C0 100%)',
-                color: 'white'
+                background: 'transparent',
+                color: 'var(--dark)'
             }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
                         Need {blog.category} Services?
                     </h2>
                     <p style={{
-                        fontSize: '1.2rem',
-                        marginBottom: '30px',
-                        maxWidth: '800px',
-                        margin: '0 auto 30px',
-                        lineHeight: '1.8'
+                        fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px', margin: '0 auto 30px', lineHeight: '1.8', color: 'var(--mid)'
                     }}>
                         Quality Housekeeping Services provides professional cleaning solutions tailored to your needs.
                         Contact us today for a free quote!
                     </p>
                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="/quote" className="btn btn-large" style={{
-                            backgroundColor: 'white',
-                            color: '#1976D2',
+                        <a href="/quote" className="btn btn-primary btn-large" style={{
                             padding: '15px 40px',
                             textDecoration: 'none',
                             borderRadius: '50px',
@@ -219,11 +213,8 @@ const BlogTemplate = () => {
                         </a>
                         <a
                             href="tel:+91-9028907874"
-                            className="btn btn-large btn-secondary"
+                            className="btn btn-secondary btn-large"
                             style={{
-                                backgroundColor: 'transparent',
-                                color: 'white',
-                                border: '2px solid white',
                                 padding: '15px 40px',
                                 textDecoration: 'none',
                                 borderRadius: '50px',
